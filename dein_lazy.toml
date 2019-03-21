@@ -3,3 +3,15 @@
 repo = 'cespare/vim-toml'
 on_ft = 'toml'
 
+# jedi-vim
+[[plugins]]
+repo = 'davidhalter/jedi-vim'
+on_ft = 'python'
+hook_add = '''
+source ~/nvimfiles/plugins/jedi-vim.rc.vim
+'''
+
+# deoplete-jedi
+[[plugins]]
+repo = 'zchee/deoplete-jedi'
+on_ft = 'python'

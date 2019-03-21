@@ -59,6 +59,7 @@ set expandtab
 set nocompatible
 set hidden
 set wildmenu
+set wildignorecase
 
 set backupdir=~/vimbackup
 set directory=~/vimbackup

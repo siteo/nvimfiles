@@ -59,3 +59,10 @@ repo = 'airblade/vim-gitgutter'
 # ag
 [[plugins]]
 repo = 'rking/ag.vim'
+
+# vim-intent-guides
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides.git'
+hook_add = '''
+source ~/nvimfiles/plugins/vim-indent-guides.rc.vim
+'''

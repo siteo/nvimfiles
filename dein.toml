@@ -44,3 +44,10 @@ repo = 'kana/vim-submode'
 hook_add = '''
 source ~/nvimfiles/plugins/submode.rc.vim
 '''
+
+# vim-fugitive
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+hook_add = '''
+source ~/nvimfiles/plugins/vim-fugitive.rc.vim
+'''

@@ -109,4 +109,4 @@ nnoremap sb :<C-u>Unite buffer_tab -buffer-name=file<CR>
 nnoremap sB :<C-u>Unite buffer -buffer-name=file<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
-tnoremap <ESC> <C-w>N
+tnoremap <ESC> <C-\><C-n>

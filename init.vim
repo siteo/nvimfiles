@@ -45,7 +45,6 @@ filetype plugin indent on
 syntax on
 colorscheme iceberg
 
-set t_Cp=256
 set cursorline
 set tabstop=4
 set shiftwidth=4
@@ -69,6 +68,8 @@ if has('persistent_undo')
     set undodir=~/undo
     set undofile
 endif
+
+hi clear CursorLine
 
 """" Key mapping
 noremap <Up>    <Nop>

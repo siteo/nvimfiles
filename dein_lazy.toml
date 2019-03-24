@@ -15,3 +15,8 @@ source ~/nvimfiles/plugins/jedi-vim.rc.vim
 [[plugins]]
 repo = 'zchee/deoplete-jedi'
 on_ft = 'python'
+
+# emmet
+[[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = 'html'

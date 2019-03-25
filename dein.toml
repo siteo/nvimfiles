@@ -82,3 +82,7 @@ depends = 'vim-airline'
 hook_add = '''
 let g:airline_theme='jellybeans'
 '''
+
+# vim-surround
+[[plugins]]
+repo = 'tpope/vim-surround'

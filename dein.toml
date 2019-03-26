@@ -94,3 +94,7 @@ repo = 'Shougo/neosnippet'
 # neosnippet-snippets
 [[plugins]]
 repo = 'Shougo/neosnippet-snippets'
+
+# vim-signature
+[[plugins]]
+repo = 'kshenoy/vim-signature'

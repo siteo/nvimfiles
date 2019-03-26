@@ -59,6 +59,8 @@ set nocompatible
 set hidden
 set wildmenu
 set wildignorecase
+set ignorecase
+set smartcase
 
 set backupdir=~/vimbackup
 set directory=~/vimbackup

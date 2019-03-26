@@ -90,6 +90,10 @@ repo = 'tpope/vim-surround'
 # neosnippet
 [[plugins]]
 repo = 'Shougo/neosnippet'
+depends = ['neosnippet-snippets']
+hook_add = '''
+source ~/nvimfiles/plugins/neosnippet.rc.vim
+'''
 
 # neosnippet-snippets
 [[plugins]]

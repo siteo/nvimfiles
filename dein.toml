@@ -86,3 +86,11 @@ let g:airline_theme='jellybeans'
 # vim-surround
 [[plugins]]
 repo = 'tpope/vim-surround'
+
+# neosnippet
+[[plugins]]
+repo = 'Shougo/neosnippet'
+
+# neosnippet-snippets
+[[plugins]]
+repo = 'Shougo/neosnippet-snippets'

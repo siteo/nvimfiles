@@ -13,7 +13,7 @@ source ~/nvimfiles/plugins/jedi-vim.rc.vim
 
 # deoplete-jedi
 [[plugins]]
-repo = 'zchee/deoplete-jedi'
+repo = 'deoplete-plugins/deoplete-jedi'
 on_ft = 'python'
 
 # emmet

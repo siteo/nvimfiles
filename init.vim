@@ -117,3 +117,22 @@ nnoremap <C-j> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 """" Define the command
 command! TagGenerate call execute 'silent !ctags -R -f .tags'
 command! DeinPluginsUpdate call dein#update()
+
+"""" Define the function
+function! s:execute_ctags() abort
+    let tag_name = '.tags'
+    let tags_path = findfile(tag_name, '.;')
+    if tags_path ==# ''
+        return
+    endif
+
+    let tags_dirpath = fnamemodify(tags_path, ':p:h')
+    execute 'silent !cd' tags_dirpath
+    execute 'silent !ctags -R -f' tag_name
+endfunction
+
+"""" Autocmd
+augroup ctags
+    autocmd!
+    autocmd BufWritePost * call s:execute_ctags()
+augroup END

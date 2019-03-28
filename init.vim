@@ -116,3 +116,4 @@ nnoremap <C-j> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 """" Define the command
 command! TagGenerate call execute 'silent !ctags -R -f .tags'
+command! DeinPluginsUpdate call dein#update()

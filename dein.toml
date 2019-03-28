@@ -2,6 +2,11 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# vimproc
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
 # vim-precious
 [[plugins]]
 repo = 'osyo-manga/vim-precious'

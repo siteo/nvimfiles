@@ -107,3 +107,10 @@ repo = 'Shougo/neosnippet-snippets'
 # vim-signature
 [[plugins]]
 repo = 'kshenoy/vim-signature'
+
+# tagbar
+[[plugins]]
+repo = 'majutsushi/tagbar'
+hook_add = '''
+source ~/nvimfiles/plugins/tagbar.rc.vim
+'''

@@ -114,3 +114,9 @@ repo = 'majutsushi/tagbar'
 hook_add = '''
 source ~/nvimfiles/plugins/tagbar.rc.vim
 '''
+
+# ale
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = '''
+'''

@@ -58,19 +58,19 @@ set autochdir
 set clipboard=unnamed
 set encoding=utf-8
 set expandtab
-set nocompatible
 set hidden
 set wildmenu
 set wildignorecase
 set ignorecase
 set smartcase
+set tags=.tags;~
 
-set backupdir=~/vimbackup
-set directory=~/vimbackup
+set backupdir=~/nvimbackup
+set directory=~/nvimbackup
 
 set noundofile
 if has('persistent_undo')
-    set undodir=~/undo
+    set undodir=~/nvimundo
     set undofile
 endif
 

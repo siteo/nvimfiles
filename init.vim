@@ -19,8 +19,6 @@ if dein#load_state(s:dein_dir)
     call dein#begin(s:dein_dir)
     call dein#load_toml(s:toml_file,{'lazy':0})
     call dein#load_toml(s:toml_lazy_file,{'lazy':1})
-    call dein#add('tomasr/molokai')
-    call dein#add('cocopon/iceberg.vim')
     call dein#end()
     call dein#save_state()
 endif
@@ -43,7 +41,6 @@ let g:node_host_prog = '/usr/local/bin/neovim-node-host'
 """" Common setting
 filetype plugin indent on
 syntax on
-colorscheme iceberg
 
 set cursorline
 set tabstop=4

@@ -121,3 +121,9 @@ repo = 'w0rp/ale'
 hook_add = '''
 source ~/nvimfiles/plugins/ale.rc.vim
 '''
+
+# colorscheme
+repo = 'cocopon/iceberg.vim'
+hook_add = '''
+colorscheme iceberg
+'''

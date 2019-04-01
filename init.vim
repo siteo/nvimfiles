@@ -29,14 +29,20 @@ if has('vim_starting') && dein#check_install()
 endif
 
 """" Python provider
-let g:python_host_prog  = '/usr/local/var/pyenv/versions/py2neovim/bin/python'
-let g:python3_host_prog = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
+if has('mac')
+    let g:python_host_prog  = '/usr/local/var/pyenv/versions/py2neovim/bin/python'
+    let g:python3_host_prog = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
+endif
 
 """" Ruby provider
-let g:ruby_host_prog = '/usr/local/bin/neovim-ruby-host'
+if has('mac')
+    let g:ruby_host_prog = '/usr/local/bin/neovim-ruby-host'
+endif
 
 """" Node.js provider
-let g:node_host_prog = '/usr/local/bin/neovim-node-host'
+if has('mac')
+    let g:node_host_prog = '~/.nodebrew/current/bin/neovim-node-host'
+endif
 
 """" Common setting
 filetype plugin indent on

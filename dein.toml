@@ -119,4 +119,5 @@ source ~/nvimfiles/plugins/tagbar.rc.vim
 [[plugins]]
 repo = 'w0rp/ale'
 hook_add = '''
+source ~/nvimfiles/plugins/ale.rc.vim
 '''

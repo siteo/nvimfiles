@@ -11,7 +11,7 @@ let g:ale_fixers = {
     \ }
 
 let g:ale_python_flake8_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
-let g:ale_python_flake8_options = '-m flake8'
+let g:ale_python_flake8_options = '-m flake8 --ignore=E501'
 let g:ale_python_autopep8_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
 let g:ale_python_autopep8_options = '-m autopep8'
 let g:ale_python_isort_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'

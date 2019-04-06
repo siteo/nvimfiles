@@ -123,6 +123,7 @@ source ~/nvimfiles/plugins/ale.rc.vim
 '''
 
 # colorscheme
+[[plugins]]
 repo = 'cocopon/iceberg.vim'
 hook_add = '''
 colorscheme iceberg

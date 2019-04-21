@@ -18,3 +18,5 @@ let g:ale_python_isort_executable = '/usr/local/var/pyenv/versions/py3neovim/bin
 let g:ale_python_isort_options = '-m isort'
 let g:ale_python_black_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
 let g:ale_python_black_options = '-m black'
+
+let g:ale_fix_on_save = 1

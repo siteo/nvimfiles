@@ -19,9 +19,14 @@ on_ft = 'python'
 # emmet
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = 'html'
+on_ft = ['html', 'javascript']
 
 # vim-javascript
 [[plugins]]
 repo = 'pangloss/vim-javascript'
 on_ft = 'javascript'
+
+# vim-vue
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = 'vue'

@@ -124,7 +124,7 @@ nnoremap <silent> [VimDiff]o :<C-u>diffoff<CR>
 nnoremap <silent> [VimDiff]u :<C-u>diffupdate<CR>
 
 """" Define the command
-command! TagGenerate call execute 'silent !ctags -R -f .tags'
+command! TagGenerate execute 'silent !ctags -R -f .tags'
 command! DeinPluginsUpdate call dein#update()
 
 """" Define the function
@@ -136,7 +136,7 @@ function! s:execute_ctags() abort
     endif
 
     let tags_dirpath = fnamemodify(tags_path, ':p:h')
-    execute 'silent !cd' tags_dirpath
+    execute 'silent cd' tags_dirpath
     execute 'silent !ctags -R -f' tag_name
 endfunction
 

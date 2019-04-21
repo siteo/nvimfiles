@@ -10,6 +10,10 @@ nnoremap <silent> [denite]c :<C-u>Denite change<CR>
 nnoremap <silent> [denite]l :<C-u>Denite line<CR>
 nnoremap <silent> [denite]t :<C-u>Denite tag<CR>
 nnoremap <silent> [denite]e :<C-u>Denite menu<CR>
+nnoremap <silent> [denite]g :<C-u>Denite grep<CR>
+
+call denite#custom#var('file/rec', 'command',
+    \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
 
 let s:menus = {}
 

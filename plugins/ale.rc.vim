@@ -4,10 +4,14 @@ nnoremap <silent> [ale]f :<C-u>ALEFix<CR>
 
 let g:ale_linters = {
     \ 'python': ['flake8'],
+    \ 'javascript': ['eslint'],
+    \ 'vue': ['eslint']
     \ }
 
 let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
+    \ 'javascript': ['prettier'],
+    \ 'vue' : ['prettier']
     \ }
 
 let g:ale_python_flake8_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'

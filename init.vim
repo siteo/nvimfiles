@@ -63,6 +63,7 @@ set wildmenu
 set wildignorecase
 set ignorecase
 set smartcase
+set conceallevel=0
 set tags=.tags;~
 
 set backupdir=~/nvimbackup

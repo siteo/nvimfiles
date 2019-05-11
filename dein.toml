@@ -122,6 +122,13 @@ hook_add = '''
 source ~/nvimfiles/plugins/ale.rc.vim
 '''
 
+# easymotion
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
+hook_add = '''
+source ~/nvimfiles/plugins/easymotion.rc.vim
+'''
+
 # colorscheme
 [[plugins]]
 repo = 'cocopon/iceberg.vim'

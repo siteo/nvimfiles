@@ -1,4 +1,4 @@
-nmap ff <Plug>(easymotion-s2)
+nmap fs <Plug>(easymotion-s2)
 nmap fj <Plug>(easymotion-j)
 nmap fk <Plug>(easymotion-k)
 nmap f/ <plug>(easymotion-sn)

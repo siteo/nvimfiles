@@ -113,6 +113,7 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
 tnoremap <ESC> <C-\><C-n>
+tnoremap jj <C-\><C-n>
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-j> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 

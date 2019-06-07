@@ -45,9 +45,6 @@ if has('mac')
 endif
 
 """" Common setting
-filetype plugin indent on
-syntax on
-
 set cursorline
 set tabstop=4
 set shiftwidth=4

@@ -45,6 +45,8 @@ if has('mac')
 endif
 
 """" Common setting
+colorscheme iceberg
+
 set cursorline
 set tabstop=4
 set shiftwidth=4

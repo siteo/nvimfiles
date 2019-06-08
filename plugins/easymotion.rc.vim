@@ -1,7 +1,9 @@
 nmap fs <Plug>(easymotion-s2)
 nmap fj <Plug>(easymotion-j)
 nmap fk <Plug>(easymotion-k)
-nmap f/ <plug>(easymotion-sn)
+nmap f/ <Plug>(easymotion-sn)
+nmap fw <Plug>(easymotion-w)
+nmap fb <Plug>(easymotoin-b)
 
 " let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1

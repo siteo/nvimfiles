@@ -2,15 +2,6 @@
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
-# vim-precious
-[[plugins]]
-repo = 'osyo-manga/vim-precious'
-depends = ['context_filetype.vim']
-
-# context_filetype
-[[plugins]]
-repo = 'Shougo/context_filetype.vim'
-
 # nerdtree
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -55,10 +46,6 @@ source ~/nvimfiles/plugins/vim-fugitive.rc.vim
 # vim-gitgutter
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
-
-# ag
-[[plugins]]
-repo = 'rking/ag.vim'
 
 # vim-intent-guides
 [[plugins]]

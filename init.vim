@@ -45,6 +45,9 @@ if has('mac')
 endif
 
 """" Common setting
+filetype plugin indent on
+syntax enable
+
 colorscheme iceberg
 
 set cursorline

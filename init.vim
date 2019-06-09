@@ -32,6 +32,8 @@ endif
 if has('mac')
     let g:python_host_prog  = '/usr/local/var/pyenv/versions/py2neovim/bin/python'
     let g:python3_host_prog = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
+elseif has('win32') || has('win64')
+    let g:python3_host_prog = $HOMEPATH.'\nvimenv\pynvim\Scripts\python'
 endif
 
 """" Ruby provider

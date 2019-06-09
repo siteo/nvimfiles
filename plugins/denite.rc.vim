@@ -2,15 +2,15 @@ nnoremap [denite] <Nop>
 nmap <Space>f [denite]
 
 nnoremap <silent> [denite]f :<C-u>Denite file<CR>
-nnoremap <silent> [denite]n :<C-u>Denite file:new<CR>
-nnoremap <silent> [denite]r :<C-u>Denite file/rec<CR>
-nnoremap <silent> [denite]m :<C-u>Denite file_mru -start-filter<CR>
-nnoremap <silent> [denite]b :<C-u>Denite buffer<CR>
+nnoremap <silent> [denite]n :<C-u>Denite file:new -start-filter<CR>
+nnoremap <silent> [denite]r :<C-u>Denite file/rec -vertical-preview<CR>
+nnoremap <silent> [denite]m :<C-u>Denite file_mru -start-filter -vertical-preview<CR>
+nnoremap <silent> [denite]b :<C-u>Denite buffer -vertical-preview<CR>
 nnoremap <silent> [denite]c :<C-u>Denite change<CR>
-nnoremap <silent> [denite]l :<C-u>Denite line<CR>
+nnoremap <silent> [denite]l :<C-u>Denite line -vertical-preview<CR>
 nnoremap <silent> [denite]t :<C-u>Denite tag<CR>
 nnoremap <silent> [denite]e :<C-u>Denite menu<CR>
-nnoremap <silent> [denite]g :<C-u>Denite grep<CR>
+nnoremap <silent> [denite]g :<C-u>Denite grep -vertical-preview<CR>
 
 call denite#custom#var('file/rec', 'command',
     \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])

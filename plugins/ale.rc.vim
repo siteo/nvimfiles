@@ -5,13 +5,17 @@ nnoremap <silent> [ale]f :<C-u>ALEFix<CR>
 let g:ale_linters = {
     \ 'python': ['flake8'],
     \ 'javascript': ['eslint'],
-    \ 'vue': ['eslint']
+    \ 'vue': ['eslint'],
+    \ 'css': ['stylelint'],
+    \ 'scss': ['stylelint'],
     \ }
 
 let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
     \ 'javascript': ['prettier'],
-    \ 'vue' : ['prettier']
+    \ 'vue' : ['prettier'],
+    \ 'css': ['stylelint'],
+    \ 'scss': ['stylelint'],
     \ }
 
 if has('mac')

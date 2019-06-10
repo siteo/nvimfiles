@@ -1,6 +1,9 @@
-nnoremap [ale] <Nop>
-nmap <Space>a [ale]
-nnoremap <silent> [ale]f :<C-u>ALEFix<CR>
+nnoremap [ALE] <Nop>
+nmap <Space>a [ALE]
+nnoremap <silent> [ALE]f :<C-u>ALEFix<CR>
+nnoremap <silent> [ALE]d :<C-u>ALEDetail<CR>
+nnoremap <silent> [ALE]n :<C-u>ALENext<CR>
+nnoremap <silent> [ALE]p :<C-u>ALEPrevious<CR>
 
 let g:ale_linters = {
     \ 'python': ['flake8'],

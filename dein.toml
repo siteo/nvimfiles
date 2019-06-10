@@ -117,3 +117,7 @@ source ~/nvimfiles/plugins/easymotion.rc.vim
 # colorscheme
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
+hook_add = '''
+set background=dark
+autocmd VimEnter * nested colorscheme iceberg
+'''

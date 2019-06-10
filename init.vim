@@ -50,8 +50,6 @@ endif
 filetype plugin indent on
 syntax enable
 
-colorscheme iceberg
-
 set cursorline
 set tabstop=4
 set shiftwidth=4

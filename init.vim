@@ -102,9 +102,7 @@ nnoremap sL <C-w>L
 nnoremap sH <C-w>H
 nnoremap sn gt
 nnoremap sp gT
-nnoremap sr <C-w>r
 nnoremap s= <C-w>=
-nnoremap sw <C-w>w
 nnoremap sN :<C-u>bn<CR>
 nnoremap sP :<C-u>bp<CR>
 nnoremap st :<C-u>tabnew<CR>
@@ -115,8 +113,6 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
 tnoremap <ESC> <C-\><C-n>
-nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
-nnoremap <C-j> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
 """" Define the command
 command! TagGenerate execute 'silent !ctags -R -f .tags'

@@ -1,5 +1,5 @@
 nnoremap [denite] <Nop>
-nmap <Space>f [denite]
+nmap <Space>d [denite]
 
 nnoremap <silent> [denite]f :<C-u>Denite file<CR>
 nnoremap <silent> [denite]n :<C-u>Denite file:new -start-filter<CR>
@@ -31,3 +31,15 @@ function! s:denite_my_settings() abort
     \ denite#do_map('toggle_select').'j'
 endfunction
 
+let s:menus = {}
+
+let s:menus.diff = {
+    \ 'description' : 'Showing differences between two, three or four versions of the same file.'
+    \ }
+let s:menus.diff.command_candidates = [
+    \ ['Diff this', 'diffthis'],
+    \ ['Diff off', 'diffoff'],
+    \ ['Diff update', 'diffupdate'],
+    \ ]
+
+call denite#custom#var('menu', 'menus', s:menus)

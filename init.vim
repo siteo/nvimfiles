@@ -120,12 +120,6 @@ tnoremap <ESC> <C-\><C-n>
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 nnoremap <C-j> :split<CR> :exe("tjump ".expand('<cword>'))<CR>
 
-nnoremap [VimDiff] <Nop>
-nmap <Space>d [VimDiff]
-nnoremap <silent> [VimDiff]t :<C-u>diffthis<CR>
-nnoremap <silent> [VimDiff]o :<C-u>diffoff<CR>
-nnoremap <silent> [VimDiff]u :<C-u>diffupdate<CR>
-
 """" Define the command
 command! TagGenerate execute 'silent !ctags -R -f .tags'
 command! DeinPluginsUpdate call dein#update()

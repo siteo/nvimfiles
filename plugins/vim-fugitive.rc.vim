@@ -1,5 +1,5 @@
 nnoremap [fugitive] <Nop>
-nmap <Space>g [fugitive]
+nmap <Space>f [fugitive]
 nnoremap <silent> [fugitive]s :<C-u>Gstatus<CR>
 nnoremap <silent> [fugitive]w :<C-u>Gwrite<CR>
 nnoremap <silent> [fugitive]c :<C-u>Gcommit<CR>

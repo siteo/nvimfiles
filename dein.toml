@@ -46,6 +46,9 @@ source ~/nvimfiles/plugins/vim-fugitive.rc.vim
 # vim-gitgutter
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+hook_add = '''
+source ~/nvimfiles/plugins/vim-gitgutter.rc.vim
+'''
 
 # vim-intent-guides
 [[plugins]]

@@ -2,9 +2,9 @@ nnoremap [denite] <Nop>
 nmap <Space>d [denite]
 
 nnoremap <silent> [denite]f :<C-u>Denite file<CR>
-nnoremap <silent> [denite]n :<C-u>Denite file:new -start-filter<CR>
+nnoremap <silent> [denite]n :<C-u>Denite file:new <CR>
 nnoremap <silent> [denite]r :<C-u>Denite file/rec -vertical-preview<CR>
-nnoremap <silent> [denite]m :<C-u>Denite file_mru -start-filter -vertical-preview<CR>
+nnoremap <silent> [denite]m :<C-u>Denite file_mru -vertical-preview<CR>
 nnoremap <silent> [denite]b :<C-u>Denite buffer -vertical-preview<CR>
 nnoremap <silent> [denite]c :<C-u>Denite change<CR>
 nnoremap <silent> [denite]l :<C-u>Denite line -vertical-preview<CR>
@@ -14,6 +14,14 @@ nnoremap <silent> [denite]g :<C-u>Denite grep -vertical-preview<CR>
 
 call denite#custom#var('file/rec', 'command',
     \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+
+call denite#custom#var('grep', 'command', ['ag'])
+call denite#custom#var('grep', 'default_opts',
+    \ ['-i', '--vimgrep'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'pattern_opt', [])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('grep', 'final_opts', [])
 
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
@@ -26,6 +34,8 @@ function! s:denite_my_settings() abort
     nnoremap <silent><buffer><expr> q
     \ denite#do_map('quit')
     nnoremap <silent><buffer><expr> i
+    \ denite#do_map('open_filter_buffer')
+    nnoremap <silent><buffer><expr> a
     \ denite#do_map('open_filter_buffer')
     nnoremap <silent><buffer><expr> <Space>
     \ denite#do_map('toggle_select').'j'

@@ -2,7 +2,7 @@ nnoremap [denite] <Nop>
 nmap <Space>d [denite]
 
 nnoremap <silent> [denite]f :<C-u>Denite file<CR>
-nnoremap <silent> [denite]n :<C-u>Denite file:new <CR>
+nnoremap <silent> [denite]n :<C-u>Denite file:new<CR>
 nnoremap <silent> [denite]r :<C-u>Denite file/rec -vertical-preview<CR>
 nnoremap <silent> [denite]m :<C-u>Denite file_mru -vertical-preview<CR>
 nnoremap <silent> [denite]b :<C-u>Denite buffer -vertical-preview<CR>

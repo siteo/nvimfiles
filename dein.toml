@@ -22,11 +22,11 @@ source ~/nvimfiles/plugins/denite.rc.vim
 repo = 'Shougo/neomru.vim'
 on_source = 'denite.vim'
 
-# deoplete
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
+repo = 'neoclide/coc.nvim'
+build = 'call coc#util#install()'
 hook_add = '''
-source ~/nvimfiles/plugins/deoplete.rc.vim
+source ~/nvimfiles/plugins/coc.rc.vim
 '''
 
 # vim-submode
@@ -76,18 +76,6 @@ let g:airline_theme='jellybeans'
 # vim-surround
 [[plugins]]
 repo = 'tpope/vim-surround'
-
-# neosnippet
-[[plugins]]
-repo = 'Shougo/neosnippet'
-depends = ['neosnippet-snippets']
-hook_add = '''
-source ~/nvimfiles/plugins/neosnippet.rc.vim
-'''
-
-# neosnippet-snippets
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
 
 # vim-signature
 [[plugins]]

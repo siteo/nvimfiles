@@ -22,12 +22,21 @@ source ~/nvimfiles/plugins/denite.rc.vim
 repo = 'Shougo/neomru.vim'
 on_source = 'denite.vim'
 
+# coc
 [[plugins]]
 repo = 'neoclide/coc.nvim'
 build = 'call coc#util#install()'
 hook_add = '''
 source ~/nvimfiles/plugins/coc.rc.vim
 '''
+
+# vim-snippets
+[[plugins]]
+repo = 'honza/vim-snippets'
+
+# lexima.vim
+[[plugins]]
+repo = 'cohama/lexima.vim'
 
 # vim-submode
 [[plugins]]

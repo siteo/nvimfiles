@@ -25,7 +25,7 @@ on_source = 'denite.vim'
 # coc
 [[plugins]]
 repo = 'neoclide/coc.nvim'
-build = 'call coc#util#install()'
+hook_post_update = 'call coc#util#install()'
 hook_add = '''
 source ~/nvimfiles/plugins/coc.rc.vim
 '''

@@ -1,3 +1,3 @@
 GuiTabline 0
 GuiPopupmenu 0
-GuiFont HackGen53_Console_for_Powerline:h11:l
+GuiFont HackGen53 Console for Powerline:h11:l

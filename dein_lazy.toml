@@ -18,3 +18,11 @@ on_ft = 'javascript'
 [[plugins]]
 repo = 'MaxMEllon/vim-jsx-pretty'
 on_ft = 'javascript'
+
+# vim-markdown
+[[plugins]]
+repo = 'tpope/vim-markdown'
+on_ft = 'markdown'
+hook_add = '''
+let g:previm_open_cmd = 'open -a Google\ Chrome'
+'''

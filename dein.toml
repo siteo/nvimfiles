@@ -111,6 +111,10 @@ hook_add = '''
 source ~/nvimfiles/plugins/easymotion.rc.vim
 '''
 
+# previm
+[[plugins]]
+repo = 'previm/previm'
+
 # colorscheme
 [[plugins]]
 repo = 'cocopon/iceberg.vim'

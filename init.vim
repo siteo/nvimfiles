@@ -17,8 +17,7 @@ endif
 
 call plug#begin(s:plug_repo_dir)
     Plug 'cocopon/iceberg.vim', {'do': ':colorscheme iceberg'}
-    Plug 'scrooloose/nerdtree'
-    Plug 'Shougo/denite.nvim' | Plug 'Shougo/neomru.vim'
+    Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'neoclide/coc.nvim', {'do': {-> coc#util#install()}} | Plug 'honza/vim-snippets'
     Plug 'cohama/lexima.vim'
     Plug 'kana/vim-submode'
@@ -31,6 +30,8 @@ call plug#begin(s:plug_repo_dir)
     Plug 'w0rp/ale'
     Plug 'easymotion/vim-easymotion'
     Plug 'previm/previm'
+    Plug 'junegunn/fzf', has('win32') ? {} : {'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
 
     Plug 'mattn/emmet-vim', {'for': ['html', 'javascript']}
     Plug 'pangloss/vim-javascript', {'for': 'javascript'}
@@ -41,11 +42,9 @@ call plug#end()
 " colorscheme
 colorscheme iceberg
 
-" nerdtree
+" nerdtree / nerdtree-git-plugins
 source ~/nvimfiles/plugins/nerdtree.rc.vim
-
-" denite
-source ~/nvimfiles/plugins/denite.rc.vim
+source ~/nvimfiles/plugins/nerdtree-git-plugin.rc.vim
 
 " coc
 source ~/nvimfiles/plugins/coc.rc.vim
@@ -62,10 +61,8 @@ source ~/nvimfiles/plugins/vim-gitgutter.rc.vim
 " vim-indent-guides
 source ~/nvimfiles/plugins/vim-indent-guides.rc.vim
 
-" vim-airline
+" vim-airline / vim-airline-themes
 source ~/nvimfiles/plugins/vim-airline.rc.vim
-
-" vim-airline-themes
 let g:airline_theme='jellybeans'
 
 " ale
@@ -73,6 +70,9 @@ source ~/nvimfiles/plugins/ale.rc.vim
 
 " vim-easymotion
 source ~/nvimfiles/plugins/easymotion.rc.vim
+
+" fzf.vim
+source ~/nvimfiles/plugins/fzf.rc.vim
 
 " emmet-vim
 source ~/nvimfiles/plugins/emmet.rc.vim
@@ -171,3 +171,4 @@ nnoremap sQ :<C-u>bd<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
 tnoremap <ESC> <C-\><C-n>
+tnoremap <silent> jj <C-\><C-n>

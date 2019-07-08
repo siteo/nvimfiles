@@ -2,7 +2,7 @@ nnoremap [GitPlug] <Nop>
 nmap <Space>g [GitPlug]
 
 " fugitive
-nnoremap <silent> [GitPlug]s :<C-u>Gstatus<CR>
+nnoremap <silent> [GitPlug]s :<C-u>15Gstatus<CR>
 nnoremap <silent> [GitPlug]w :<C-u>Gwrite<CR>
 nnoremap <silent> [GitPlug]c :<C-u>Gcommit<CR>
 nnoremap <silent> [GitPlug]r :<C-u>Gread<CR>

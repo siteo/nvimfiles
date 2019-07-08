@@ -42,3 +42,4 @@ let g:fzf_colors =
       \ 'header':  ['fg', 'Comment'] }
 
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+let g:fzf_history_dir = '~/.nvim/fzf-history'

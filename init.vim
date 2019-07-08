@@ -18,6 +18,7 @@ endif
 call plug#begin(s:plug_repo_dir)
     Plug 'cocopon/iceberg.vim', {'do': ':colorscheme iceberg'}
     Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'scrooloose/nerdcommenter'
     Plug 'neoclide/coc.nvim', {'do': {-> coc#util#install()}} | Plug 'honza/vim-snippets'
     Plug 'cohama/lexima.vim'
     Plug 'kana/vim-submode'

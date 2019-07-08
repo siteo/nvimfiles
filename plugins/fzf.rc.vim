@@ -1,7 +1,7 @@
 let g:fzf_command_prefix = 'Fzf'
 
 nnoremap [Fzf] <Nop>
-nmap <Space>d [Fzf]
+nmap <Space>f [Fzf]
 
 nnoremap <silent> [Fzf]f :<C-u>FzfFiles<CR>
 nnoremap <silent> [Fzf]g :<C-u>FzfGFiles<CR>

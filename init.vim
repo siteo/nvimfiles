@@ -30,7 +30,7 @@ call plug#begin(s:plug_repo_dir)
     Plug 'w0rp/ale'
     Plug 'easymotion/vim-easymotion'
     Plug 'previm/previm'
-    Plug 'junegunn/fzf', has('win32') ? {} : {'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf', has('win32') ? {'dir': '~/.fzf'} : {'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
 
     Plug 'mattn/emmet-vim', {'for': ['html', 'javascript']}
@@ -52,11 +52,8 @@ source ~/nvimfiles/plugins/coc.rc.vim
 " vim-submode
 source ~/nvimfiles/plugins/submode.rc.vim
 
-" vim-fugitive
-source ~/nvimfiles/plugins/vim-fugitive.rc.vim
-
-" vim-gitgutter
-source ~/nvimfiles/plugins/vim-gitgutter.rc.vim
+" gitplug
+source ~/nvimfiles/plugins/gitplug.rc.vim
 
 " vim-indent-guides
 source ~/nvimfiles/plugins/vim-indent-guides.rc.vim

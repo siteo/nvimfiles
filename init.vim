@@ -16,6 +16,7 @@ if has('vim_starting')
 endif
 
 call plug#begin(s:plug_repo_dir)
+    Plug 'junegunn/vim-plug', {'dir': '~/.nvim/vim-plug/autoload'}
     Plug 'cocopon/iceberg.vim', {'do': ':colorscheme iceberg'}
     Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'scrooloose/nerdcommenter'

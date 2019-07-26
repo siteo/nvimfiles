@@ -171,3 +171,6 @@ nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
 tnoremap <ESC> <C-\><C-n>
 tnoremap <silent> jj <C-\><C-n>
+
+"""" Load local init.vim
+source ~/nvimfiles/local_init.vim

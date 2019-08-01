@@ -34,6 +34,7 @@ call plug#begin(s:plug_repo_dir)
     Plug 'previm/previm'
     Plug 'junegunn/fzf', has('win32') ? {'dir': '~/.fzf'} : {'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
+    Plug 'mbbill/undotree'
 
     Plug 'mattn/emmet-vim', {'for': ['html', 'javascript']}
     Plug 'pangloss/vim-javascript', {'for': 'javascript'}
@@ -79,6 +80,8 @@ source ~/nvimfiles/plugins/emmet.rc.vim
 " vim-markdown
 let g:previm_open_cmd = 'open -a Google\ Chrome'
 
+" undotree
+nnoremap <F5> :UndotreeToggle<CR>
 
 """" Python provider
 if has('mac')

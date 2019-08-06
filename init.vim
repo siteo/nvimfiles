@@ -122,6 +122,10 @@ set wildignorecase
 set ignorecase
 set smartcase
 set conceallevel=0
+set fileformats=unix,dos,mac
+set fileencodings=utf-8,sjis
+
+set tags=.tags;~
 
 set backupdir=~/nvimbackup
 set directory=~/nvimbackup
@@ -174,6 +178,28 @@ nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
 tnoremap <ESC> <C-\><C-n>
 tnoremap <silent> jj <C-\><C-n>
+
+"""" Define commands
+command! TagGenerate execute 'silent !ctags -R -f .tags'
+
+"""" Define functions
+function! s:execute_ctags() abort
+    let tag_name = '.tags'
+    let tags_path = findfile(tag_name, '.;')
+    if tags_path ==# ''
+        return
+    endif
+
+    let tags_dirpath = fnamemodify(tags_path, ':p:h')
+    execute 'silent cd' tags_dirpath
+    execute 'silent !ctags -R -f' tag_name
+endfunction
+
+"""" Autocmd
+augroup ctags
+    autocmd!
+    autocmd BufWritePost * call s:execute_ctags()
+augroup END
 
 """" Load local init.vim
 source ~/nvimfiles/local_init.vim

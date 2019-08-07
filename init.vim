@@ -182,7 +182,7 @@ tnoremap <ESC> <C-\><C-n>
 tnoremap <silent> jj <C-\><C-n>
 
 """" Define commands
-command! TagGenerate execute 'silent !ctags -R -f .tags'
+command! TagsGenerate execute 'silent !ctags -R -f .tags'
 
 """" Define functions
 function! s:execute_ctags() abort

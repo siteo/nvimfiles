@@ -20,7 +20,8 @@ call plug#begin(s:plug_repo_dir)
     Plug 'cocopon/iceberg.vim', {'do': ':colorscheme iceberg'}
     Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'scrooloose/nerdcommenter'
-    Plug 'neoclide/coc.nvim', {'branch':'release'} | Plug 'honza/vim-snippets'
+    Plug 'neoclide/coc.nvim', {'branch':'release'}
+    Plug 'honza/vim-snippets'
     Plug 'cohama/lexima.vim'
     Plug 'kana/vim-submode'
     Plug 'tpope/vim-fugitive'
@@ -35,6 +36,7 @@ call plug#begin(s:plug_repo_dir)
     Plug 'junegunn/fzf', has('win32') ? {'dir': '~/.fzf'} : {'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'mbbill/undotree'
+    Plug 'majutsushi/tagbar'
 
     Plug 'mattn/emmet-vim', {'for': ['html', 'javascript']}
     Plug 'pangloss/vim-javascript', {'for': 'javascript'}

@@ -7,10 +7,11 @@ nnoremap <silent> [Fzf]f :<C-u>FzfFiles<CR>
 nnoremap <silent> [Fzf]g :<C-u>FzfGFiles<CR>
 nnoremap <silent> [Fzf]s :<C-u>FzfGFiles?<CR>
 nnoremap <silent> [Fzf]b :<C-u>FzfBuffers<CR>
-nnoremap <silent> [Fzf]c :<C-u>FzfCommands<CR>
+nnoremap <silent> [Fzf]c :<C-u>FzfCommits<CR>
 nnoremap <silent> [Fzf]l :<C-u>FzfLines<CR>
 nnoremap <silent> [Fzf]h :<C-u>FzfHistory<CR>
 nnoremap <silent> [Fzf]a :<C-u>FzfAg<CR>
+nnoremap <silent> [Fzf]t :call fzf#vim#tags("'" . expand('<cword>'))<CR>
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)
@@ -43,3 +44,5 @@ let g:fzf_colors =
 
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 let g:fzf_history_dir = '~/.nvim/fzf-history'
+
+let g:fzf_buffers_jump = 1

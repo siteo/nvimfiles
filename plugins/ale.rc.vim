@@ -8,7 +8,6 @@ nnoremap <silent> [ALE]p :<C-u>ALEPrevious<CR>
 let g:ale_linters = {
     \ 'python': ['flake8'],
     \ 'javascript': ['eslint'],
-    \ 'vue': ['eslint'],
     \ 'css': ['stylelint'],
     \ 'scss': ['stylelint'],
     \ }
@@ -17,9 +16,8 @@ let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
     \ 'javascript': ['prettier'],
     \ 'json': ['prettier'],
-    \ 'vue' : ['prettier'],
-    \ 'css': ['stylelint'],
-    \ 'scss': ['stylelint'],
+    \ 'css': ['prettier'],
+    \ 'scss': ['prettier'],
     \ }
 
 if has('mac')

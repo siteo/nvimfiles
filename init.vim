@@ -204,4 +204,6 @@ augroup ctags
 augroup END
 
 """" Load local init.vim
-source ~/nvimfiles/local_init.vim
+if filereadable(expand(~/nvimfiles/local_init.vim))
+    execute 'source' expand(~/nvimfiles/local_init.vim)
+endif

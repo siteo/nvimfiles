@@ -1,5 +1,6 @@
 " dein configurations.
 
+let g:dein#install_progress_type = 'title'
 let g:dein#install_log_filename = '~/.nvim/dein.log'
 
 let s:cache_home = expand('~/.nvim')
@@ -21,4 +22,8 @@ if dein#load_state(s:dein_dir)
     call dein#load_toml(s:toml_filetype)
     call dein#end()
     call dein#save_state()
+endif
+
+if has('vim_starting') && dein#check_install()
+    call dein#install()
 endif

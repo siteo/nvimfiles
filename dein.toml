@@ -9,15 +9,39 @@ repo = 'Shougo/denite.nvim'
 hook_add = 'source ~/nvimfiles/plugins/denite.rc.vim'
 
 [[plugins]]
+repo = 'Shougo/neomru.vim'
+depends = ['denite.nvim']
+
+[[plugins]]
+repo = 'Shougo/deoplete.nvim'
+hook_add = 'source ~/nvimfiles/plugins/deoplete.rc.vim'
+depends = ['neosnippet.vim']
+
+[[plugins]]
+repo = 'Shougo/neosnippet.vim'
+hook_add = 'source ~/nvimfiles/plugins/neosnippet.rc.vim'
+
+[[plugins]]
+repo = 'honza/vim-snippets'
+depends = 'neosnippet.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+depends = ['async.vim']
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'lighttiger2505/deoplete-vim-lsp'
+depends = ['deoplete.nvim', 'vim-lsp']
+
+[[plugins]]
 repo = 'cocopon/iceberg.vim'
 hook_add = 'colorscheme iceberg'
 
 [[plugins]]
 repo = 'sheerun/vim-polyglot'
-
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-hook_add = 'let g:deoplete#enable_at_startup = 1'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'

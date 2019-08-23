@@ -6,6 +6,7 @@ repo = 'wsdjeg/dein-ui.vim'
 
 [[plugins]]
 repo = 'Shougo/denite.nvim'
+hook_add = 'source ~/nvimfiles/plugins/denite.rc.vim'
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'
@@ -36,9 +37,11 @@ hook_add = 'source ~/nvimfiles/plugins/submode.rc.vim'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+hook_add = 'source ~/nvimfiles/plugins/fugitive.rc.vim'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+hook_add = 'source ~/nvimfiles/plugins/gitgutter.rc.vim'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'

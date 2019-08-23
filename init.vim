@@ -4,6 +4,10 @@ if &compatible
     set nocompatible
 endif
 
+augroup MyAutoCmd
+    autocmd!
+augroup END
+
 
 """" dein
 source ~/nvimfiles/dein.rc.vim

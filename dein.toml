@@ -5,6 +5,9 @@ repo = 'Shougo/dein.vim'
 repo = 'wsdjeg/dein-ui.vim'
 
 [[plugins]]
+repo = 'Shougo/denite.nvim'
+
+[[plugins]]
 repo = 'cocopon/iceberg.vim'
 hook_add = 'colorscheme iceberg'
 

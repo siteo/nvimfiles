@@ -1,13 +1,13 @@
 nnoremap [Denite] <Nop>
 nmap <Space>f [Denite]
 
-nnoremap <silent> [Denite]f :<C-u>Denite file -highlight-matched-char=Special -start-filter<CR>
-nnoremap <silent> [Denite]n :<C-u>Denite file:new -highlight-matched-char=Underlined -start-filter<CR>
-nnoremap <silent> [Denite]m :<C-u>Denite file_mru -highlight-matched-char=Special -start-filter<CR>
-nnoremap <silent> [Denite]r :<C-u>Denite file/rec -highlight-matched-char=Special -start-filter<CR>
-nnoremap <silent> [Denite]o :<C-u>Denite outLine -start-filter<CR>
-nnoremap <silent> [Denite]g :<C-u>DeniteProjectDir file/rec -highlight-matched-char=Special -start-filter<CR>
-
+nnoremap <silent> [Denite]f :<C-u>Denite file -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]n :<C-u>Denite file:new -highlight-matched-char=Underlined<CR>
+nnoremap <silent> [Denite]m :<C-u>Denite file_mru -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]r :<C-u>Denite file/rec -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]o :<C-u>Denite outLine<CR>
+nnoremap <silent> [Denite]g :<C-u>DeniteProjectDir file/rec -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]b :<C-u>Denite buffer -highlight-matched-char=Special<CR>
 
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort

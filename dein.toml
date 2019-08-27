@@ -28,6 +28,7 @@ depends = 'neosnippet.vim'
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'
 depends = ['async.vim']
+hook_add = 'source ~/nvimfiles/plugins/vim-lsp.rc.vim'
 
 [[plugins]]
 repo = 'prabirshrestha/async.vim'
@@ -44,10 +45,12 @@ if has('win32')
 elseif has('mac')
     let cmd = './install.sh'
 else
+    echo 'deoplete-tabnine is disable'
     let cmd = ''
 endif
 let g:dein#plugin.build = cmd
 '''
+if = "has('win32') || has('mac')"
 
 [[plugins]]
 repo = 'cocopon/iceberg.vim'

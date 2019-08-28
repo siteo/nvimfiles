@@ -6,8 +6,9 @@ nnoremap <silent> [Denite]n :<C-u>Denite file:new -highlight-matched-char=Underl
 nnoremap <silent> [Denite]m :<C-u>Denite file_mru -highlight-matched-char=Special<CR>
 nnoremap <silent> [Denite]r :<C-u>Denite file/rec -highlight-matched-char=Special<CR>
 nnoremap <silent> [Denite]o :<C-u>Denite outLine<CR>
-nnoremap <silent> [Denite]g :<C-u>DeniteProjectDir file/rec -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]p :<C-u>DeniteProjectDir file/rec -highlight-matched-char=Special<CR>
 nnoremap <silent> [Denite]b :<C-u>Denite buffer -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]g :<C-u>Denite grep -highlight-matched-char=Special<CR>
 
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
@@ -32,3 +33,18 @@ function! s:denite_my_settings() abort
     nnoremap <silent><buffer><expr> <C-r>
         \ denite#do_map('restore_sources')
 endfunction
+
+call denite#custom#var('grep', 'command', ['ag'])
+call denite#custom#var('grep', 'default_opts',
+        \ ['-i', '--vimgrep'])
+call denite#custom#var('grep', 'recursive_opts', [])
+call denite#custom#var('grep', 'pattern_opt', [])
+call denite#custom#var('grep', 'separator', ['--'])
+call denite#custom#var('grep', 'final_opts', [])
+
+call denite#custom#var('file/rec', 'command',
+        \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+
+call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
+        \ [ '.git/', '.ropeproject/', '__pycache__/',
+        \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])

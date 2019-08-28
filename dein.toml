@@ -15,15 +15,6 @@ depends = ['denite.nvim']
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_add = 'source ~/nvimfiles/plugins/deoplete.rc.vim'
-depends = ['neosnippet.vim']
-
-[[plugins]]
-repo = 'Shougo/neosnippet.vim'
-hook_add = 'source ~/nvimfiles/plugins/neosnippet.rc.vim'
-
-[[plugins]]
-repo = 'honza/vim-snippets'
-depends = 'neosnippet.vim'
 
 [[plugins]]
 repo = 'prabirshrestha/vim-lsp'

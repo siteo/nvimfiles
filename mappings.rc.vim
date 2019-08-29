@@ -33,7 +33,9 @@ nnoremap st :<C-u>tabnew<CR>
 nnoremap ss :<C-u>sp<CR>
 nnoremap sv :<C-u>vs<CR>
 nnoremap sq :<C-u>q<CR>
+nnoremap sQ :<C-u>q!<CR>
 nnoremap sd :<C-u>bd<CR>
+nnoremap sD :<C-u>bd!<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
 tnoremap <ESC> <C-\><C-n>

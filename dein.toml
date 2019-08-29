@@ -104,14 +104,4 @@ repo = 'easymotion/vim-easymotion'
 hook_add = 'source ~/nvimfiles/plugins/easymotion.rc.vim'
 
 [[plugins]]
-repo = 'previm/previm'
-
-[[plugins]]
 repo = 'mbbill/undotree'
-
-[[plugins]]
-repo = 'majutsushi/tagbar'
-
-[[plugins]]
-repo = 'mattn/emmet-vim'
-hook_add = 'source ~/nvimfiles/plugins/emmet.rc.vim'

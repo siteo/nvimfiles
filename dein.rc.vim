@@ -25,3 +25,6 @@ endif
 if has('vim_starting') && dein#check_install()
     call dein#install()
 endif
+
+call map(dein#check_clean(), "delete(v:val, 'rf')")
+call dein#recache_runtimepath()

@@ -1,14 +1,19 @@
 nnoremap [Denite] <Nop>
 nmap <Space>f [Denite]
 
-nnoremap <silent> [Denite]f :<C-u>Denite file -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]f :<C-u>Denite file -highlight-matched-char=Special -vertical-preview<CR>
 nnoremap <silent> [Denite]n :<C-u>Denite file:new -highlight-matched-char=Underlined<CR>
-nnoremap <silent> [Denite]m :<C-u>Denite file_mru -highlight-matched-char=Special<CR>
-nnoremap <silent> [Denite]r :<C-u>Denite file/rec -highlight-matched-char=Special<CR>
-nnoremap <silent> [Denite]o :<C-u>Denite outLine<CR>
+nnoremap <silent> [Denite]m :<C-u>Denite file_mru -highlight-matched-char=Special -vertical-preview<CR>
+nnoremap <silent> [Denite]r :<C-u>Denite file/rec -highlight-matched-char=Special -vertical-preview<CR>
+nnoremap <silent> [Denite]o :<C-u>Denite outLine -highlight-matched-char=Special<CR>
 nnoremap <silent> [Denite]p :<C-u>DeniteProjectDir file/rec -highlight-matched-char=Special<CR>
-nnoremap <silent> [Denite]b :<C-u>Denite buffer -highlight-matched-char=Special<CR>
-nnoremap <silent> [Denite]g :<C-u>Denite grep -highlight-matched-char=Special<CR>
+nnoremap <silent> [Denite]b :<C-u>Denite buffer -highlight-matched-char=Special -vertical-preview<CR>
+nnoremap <silent> [Denite]g :<C-u>Denite grep -highlight-matched-char=Special -vertical-preview<CR>
+nnoremap <silent> [Denite]l :<C-u>Denite line -highlight-matched-char=Speial<CR>
+nnoremap <silent> [Denite]j :<C-u>Denite -resume -cursor-pos=+1 -immediately<CR>
+nnoremap <silent> [Denite]k :<C-u>Denite -resume -cursor-pos=-1 -immediately<CR>
+nnoremap <silent> [Denite]v :<C-u>Denite -resume<CR>
+
 
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort

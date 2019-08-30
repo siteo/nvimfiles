@@ -5,3 +5,11 @@ on_cmd = 'Goyo'
 [[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['javascript.jsx', 'html']
+
+[[plugins]]
+repo = 'junegunn/gv.vim'
+on_cmd = 'GV'
+
+[[plugins]]
+repo = 'junegunn/limelight.vim'
+hook_add = 'source ~/nvimfiles/plugins/limelight.rc.vim'

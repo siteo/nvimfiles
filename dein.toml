@@ -62,7 +62,7 @@ depends = ['nerdtree']
 hook_add = 'source ~/nvimfiles/plugins/nerdtree-git-plugin.rc.vim'
 
 [[plugins]]
-repo = 'cohama/lexima.vim'
+repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
 repo = 'kana/vim-submode'

@@ -18,6 +18,7 @@ let g:ale_fixers = {
     \ 'json': ['prettier'],
     \ 'css': ['prettier'],
     \ 'scss': ['prettier'],
+    \ 'html': ['prettier'],
     \ }
 
 if has('mac')

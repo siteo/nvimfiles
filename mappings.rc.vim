@@ -38,5 +38,3 @@ nnoremap sd :<C-u>bd<CR>
 nnoremap sD :<C-u>bd!<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
-tnoremap <ESC> <C-\><C-n>
-tnoremap <silent> jj <C-\><C-n>

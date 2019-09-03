@@ -16,6 +16,14 @@ inoremap <expr><C-g> deoplete#refresh()
 inoremap <expr><C-e> deoplete#cancel_popup()
 inoremap <silent><expr><C-l> deoplete#complete_common_string()
 
+call deoplete#custom#option({
+            \ 'auto_refresh_delay': 10,
+            \ 'camel_case': v:true,
+            \ 'skip_multibyte': v:true,
+            \ 'prev_completion_mode': 'length',
+            \ 'auto_preview': v:true
+            \ })
+
 call deoplete#custom#option('candidate_marks',
         \ ['A', 'S', 'D', 'F', 'G'])
 inoremap <expr>A pumvisible() ? deoplete#insert_candidate(0) : 'A'

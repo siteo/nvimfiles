@@ -90,7 +90,7 @@ hook_add = 'source ~/nvimfiles/plugins/vim-airline.rc.vim'
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 depends = ['vim-airline']
-hook_add = "let g:airline_theme='jellybeans'"
+hook_add = "let g:airline_theme='iceberg'"
 
 [[plugins]]
 repo = 'tpope/vim-surround'

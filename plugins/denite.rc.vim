@@ -53,3 +53,25 @@ call denite#custom#var('file/rec', 'command',
 call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
         \ [ '.git/', '.ropeproject/', '__pycache__/',
         \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
+
+let s:menus = {}
+let s:menus.neomru = {
+        \ 'description': 'Neomru'
+        \ }
+let s:menus.neomru.file_candidates = [
+        \ ['Edit mru file', '~/.cache/neomru/file'],
+        \ ['Edit mru directory', '~/.cache/neomru/directory']
+        \ ]
+
+let s:menus.vimrc = {
+        \ 'description': 'vimrc'
+        \ }
+let s:menus.vimrc.file_candidates = [
+        \ ['Edit init.vim', '~/nvimfiles/init.vim'],
+        \ ['Edit ginit.vim', '~/nvimfiles/ginit.vim'],
+        \ ['Edit dein.rc.vim', '~/nvimfiles/dein.rc.vim'],
+        \ ['Edit dein.toml', '~/nvimfiles/dein_lazy.toml'],
+        \ ['Edit dein_lazy.toml', '~/nvimfiles/dein_lazy.toml']
+        \ ]
+
+call denite#custom#var('menu', 'menus', s:menus)

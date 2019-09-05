@@ -13,3 +13,11 @@ on_cmd = 'GV'
 [[plugins]]
 repo = 'junegunn/limelight.vim'
 hook_add = 'source ~/nvimfiles/plugins/limelight.rc.vim'
+
+[[plugins]]
+repo = 'Shougo/neco-vim'
+on_ft = 'vim'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
+on_cmd = 'Tagbar'

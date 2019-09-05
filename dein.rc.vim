@@ -26,5 +26,10 @@ if has('vim_starting') && dein#check_install()
     call dein#install()
 endif
 
-call map(dein#check_clean(), "delete(v:val, 'rf')")
-call dein#recache_runtimepath()
+command! DeinClean call s:dein_check_clean()
+function! s:dein_check_clean() abort
+    echo 'Clean unsed plugins'
+    call map(dein#check_clean(), "delete(v:val, 'rf')")
+    call dein#recache_runtimepath()
+    echo 'Done'
+endfunction

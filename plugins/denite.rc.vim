@@ -1,19 +1,21 @@
 nnoremap [Denite] <Nop>
 nmap <Space>f [Denite]
 
-nnoremap <silent> [Denite]f :<C-u>Denite file -highlight-matched-char=Special -vertical-preview<CR>
-nnoremap <silent> [Denite]n :<C-u>Denite file:new -highlight-matched-char=Underlined<CR>
-nnoremap <silent> [Denite]m :<C-u>Denite file_mru -highlight-matched-char=Special -vertical-preview<CR>
-nnoremap <silent> [Denite]r :<C-u>Denite file/rec -highlight-matched-char=Special -vertical-preview<CR>
-nnoremap <silent> [Denite]o :<C-u>Denite outline -highlight-matched-char=Special<CR>
-nnoremap <silent> [Denite]p :<C-u>DeniteProjectDir file/rec -highlight-matched-char=Special<CR>
-nnoremap <silent> [Denite]b :<C-u>Denite buffer -highlight-matched-char=Special -vertical-preview<CR>
-nnoremap <silent> [Denite]g :<C-u>Denite grep -highlight-matched-char=Special -vertical-preview<CR>
-nnoremap <silent> [Denite]l :<C-u>Denite line -highlight-matched-char=Speial<CR>
+nnoremap <silent> [Denite]b :<C-u>Denite buffer<CR>
+nnoremap <silent> [Denite]f :<C-u>Denite file<CR>
+nnoremap <silent> [Denite]g :<C-u>Denite grep<CR>
+nnoremap <silent> [Denite]h :<C-u>Denite help<CR>
 nnoremap <silent> [Denite]j :<C-u>Denite -resume -cursor-pos=+1 -immediately<CR>
 nnoremap <silent> [Denite]k :<C-u>Denite -resume -cursor-pos=-1 -immediately<CR>
+nnoremap <silent> [Denite]l :<C-u>Denite line<CR>
+nnoremap <silent> [Denite]m :<C-u>Denite file_mru<CR>
+nnoremap <silent> [Denite]n :<C-u>Denite file:new -highlight-matched-char=Underlined<CR>
+nnoremap <silent> [Denite]o :<C-u>Denite outline<CR>
+nnoremap <silent> [Denite]p :<C-u>DeniteProjectDir file/rec<CR>
+nnoremap <silent> [Denite]r :<C-u>Denite file/rec<CR>
+nnoremap <silent> [Denite]s :<C-u>Denite source<CR>
 nnoremap <silent> [Denite]v :<C-u>Denite -resume<CR>
-
+nnoremap <silent> [Denite]y :<C-u>Denite register<CR>
 
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
@@ -39,6 +41,11 @@ function! s:denite_my_settings() abort
         \ denite#do_map('restore_sources')
 endfunction
 
+call denite#custom#optioon('default', {
+        \ 'highlight_matched_char': 'Special',
+        \ 'vertical_preview': v:true
+        \ })
+
 call denite#custom#var('grep', 'command', ['ag'])
 call denite#custom#var('grep', 'default_opts',
         \ ['-i', '--vimgrep'])
@@ -55,23 +62,15 @@ call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
         \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
 
 let s:menus = {}
-let s:menus.neomru = {
-        \ 'description': 'Neomru'
-        \ }
-let s:menus.neomru.file_candidates = [
-        \ ['Edit mru file', '~/.cache/neomru/file'],
-        \ ['Edit mru directory', '~/.cache/neomru/directory']
-        \ ]
-
 let s:menus.vimrc = {
         \ 'description': 'vimrc'
         \ }
 let s:menus.vimrc.file_candidates = [
-        \ ['Edit init.vim', '~/nvimfiles/init.vim'],
-        \ ['Edit ginit.vim', '~/nvimfiles/ginit.vim'],
-        \ ['Edit dein.rc.vim', '~/nvimfiles/dein.rc.vim'],
-        \ ['Edit dein.toml', '~/nvimfiles/dein_lazy.toml'],
-        \ ['Edit dein_lazy.toml', '~/nvimfiles/dein_lazy.toml']
+        \ ['init.vim', '~/nvimfiles/init.vim'],
+        \ ['ginit.vim', '~/nvimfiles/ginit.vim'],
+        \ ['dein.rc.vim', '~/nvimfiles/dein.rc.vim'],
+        \ ['dein.toml', '~/nvimfiles/dein_lazy.toml'],
+        \ ['dein_lazy.toml', '~/nvimfiles/dein_lazy.toml']
         \ ]
 
 call denite#custom#var('menu', 'menus', s:menus)

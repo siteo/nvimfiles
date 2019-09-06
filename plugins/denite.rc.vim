@@ -41,7 +41,7 @@ function! s:denite_my_settings() abort
         \ denite#do_map('restore_sources')
 endfunction
 
-call denite#custom#optioon('default', {
+call denite#custom#option('default', {
         \ 'highlight_matched_char': 'Special',
         \ 'vertical_preview': v:true
         \ })

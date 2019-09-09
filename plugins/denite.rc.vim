@@ -43,7 +43,9 @@ endfunction
 
 call denite#custom#option('default', {
         \ 'highlight_matched_char': 'Special',
-        \ 'vertical_preview': v:true
+        \ 'vertical_preview': v:true,
+        \ 'split': 'floating',
+        \ 'winrow': 1
         \ })
 
 call denite#custom#var('grep', 'command', ['ag'])

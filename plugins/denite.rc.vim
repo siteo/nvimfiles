@@ -17,6 +17,10 @@ nnoremap <silent> [Denite]s :<C-u>Denite source<CR>
 nnoremap <silent> [Denite]v :<C-u>Denite -resume<CR>
 nnoremap <silent> [Denite]y :<C-u>Denite register<CR>
 
+nnoremap <silent> [Denite]eh :<C-u>Denite defx/history<CR>
+nnoremap <silent> [Denite]ed :<C-u>Denite defx/drive<CR>
+
+
 autocmd FileType denite call s:denite_my_settings()
 function! s:denite_my_settings() abort
     nnoremap <silent><buffer><expr> <CR>

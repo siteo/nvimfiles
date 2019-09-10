@@ -1,4 +1,4 @@
-nmap <Space>d :<C-u>Defx<CR>
+nnoremap <silent> <Space>e :<C-u>Defx -listed -resume<CR>
 
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort

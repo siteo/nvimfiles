@@ -112,3 +112,6 @@ hook_add = 'source ~/nvimfiles/plugins/easymotion.rc.vim'
 
 [[plugins]]
 repo = 'mbbill/undotree'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'

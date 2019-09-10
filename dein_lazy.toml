@@ -21,3 +21,22 @@ on_ft = 'vim'
 [[plugins]]
 repo = 'majutsushi/tagbar'
 on_cmd = 'Tagbar'
+
+
+[[plugins]]
+repo = 'previm/previm'
+on_cmd = 'PrevimOpen'
+depends = ['open-browser.vim']
+hook_add = '''
+let g:previm_show_header = 0
+'''
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'
+
+[[plugins]]
+repo = 'dhruvasagar/vim-table-mode'
+on_cmd = 'TableModeToggle'
+hook_add = '''
+let g:table_mode_corner = '|'
+'''

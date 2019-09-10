@@ -14,8 +14,8 @@ noremap <S-j>   }
 noremap <S-k>   {
 noremap <S-l>   $
 nnoremap s <Nop>
-noremap j gj
-noremap k gk
+" noremap j gj
+" noremap k gk
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
 nnoremap sl <C-w>l

@@ -13,6 +13,10 @@ repo = 'Shougo/neomru.vim'
 depends = ['denite.nvim']
 
 [[plugins]]
+repo = 'Shougo/defx.nvim'
+hook_add = 'source ~/nvimfiles/plugins/defx.rc.vim'
+
+[[plugins]]
 repo = 'Shougo/deoplete.nvim'
 hook_add = 'source ~/nvimfiles/plugins/deoplete.rc.vim'
 

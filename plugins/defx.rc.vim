@@ -1,4 +1,8 @@
-nnoremap <silent> <Space>e :<C-u>Defx -listed -resume<CR>
+nnoremap [Defx] <Nop>
+nmap <Space>e [Defx]
+
+nnoremap <silent> [Defx]e :<C-u>Defx `expand('%:p:h')`<CR>
+nnoremap <silent> [Defx]v :<C-u>Defx -resume<CR>
 
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
@@ -65,3 +69,19 @@ function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> cd
             \ defx#do_action('change_vim_cwd')
 endfunction
+
+call defx#custom#column('icon', {
+        \ 'directory_icon': '▸',
+        \ 'opened_icon': '▾',
+        \ 'root_icon': ' ',
+        \ })
+
+call defx#custom#column('filename', {
+        \ 'min_width': 40,
+        \ 'max_width': 40,
+        \ })
+
+call defx#custom#column('mark', {
+        \ 'readonly_icon': '✗',
+        \ 'selected_icon': '✓',
+        \ })

@@ -40,3 +40,7 @@ on_cmd = 'TableModeToggle'
 hook_add = '''
 let g:table_mode_corner = '|'
 '''
+
+[[plugins]]
+repo = 'ap/vim-css-color'
+on_ft = ['css']

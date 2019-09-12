@@ -85,3 +85,10 @@ call defx#custom#column('mark', {
         \ 'readonly_icon': '✗',
         \ 'selected_icon': '✓',
         \ })
+
+call defx#custom#option('_', 'drives', [
+        \ expand('~'),
+        \ expand('~/nvimfiles'),
+        \ expand('~/workspace'),
+        \ expand('~/Downloads')
+        \ ])

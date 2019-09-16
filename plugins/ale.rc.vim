@@ -38,7 +38,9 @@ let g:ale_python_autopep8_options = '-m autopep8'
 let g:ale_python_isort_options = '-m isort'
 let g:ale_python_black_options = '-m black'
 
-let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
-let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
-
 let g:ale_fix_on_save = 1
+
+augroup FiletypeGroup
+    autocmd!
+    au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+augroup END

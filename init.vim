@@ -61,8 +61,8 @@ set fileencodings=utf-8,sjis
 set nofoldenable
 set noswapfile
 set termguicolors
-set winblend=30
-set pumblend=30
+set winblend=15
+set pumblend=15
 
 set tags=.tags;~
 

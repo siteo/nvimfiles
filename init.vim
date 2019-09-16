@@ -60,6 +60,9 @@ set fileformats=unix,dos,mac
 set fileencodings=utf-8,sjis
 set nofoldenable
 set noswapfile
+set termguicolors
+set winblend=30
+set pumblend=30
 
 set tags=.tags;~
 

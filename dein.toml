@@ -103,7 +103,7 @@ repo = 'tpope/vim-surround'
 repo = 'kshenoy/vim-signature'
 
 [[plugins]]
-repo = 'w0rp/ale'
+repo = 'dense-analysis/ale'
 hook_add = 'source ~/nvimfiles/plugins/ale.rc.vim'
 
 [[plugins]]

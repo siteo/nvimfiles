@@ -1,8 +1,8 @@
 nnoremap [Defx] <Nop>
 nmap <Space>e [Defx]
 
-nnoremap <silent> [Defx]e :<C-u>Defx `expand('%:p:h')` -split=floating -direction=topleft<CR>
-nnoremap <silent> [Defx]v :<C-u>Defx -resume -split=floating -direction=topleft<CR>
+nnoremap <silent> [Defx]e :<C-u>Defx `expand('%:p:h')`<CR>
+nnoremap <silent> [Defx]v :<C-u>Defx -resume<CR>
 
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
@@ -80,11 +80,6 @@ call defx#custom#column('icon', {
         \ 'root_icon': ' ',
         \ })
 
-call defx#custom#column('filename', {
-        \ 'min_width': 40,
-        \ 'max_width': 40,
-        \ })
-
 call defx#custom#column('mark', {
         \ 'readonly_icon': '✗',
         \ 'selected_icon': '✓',
@@ -96,3 +91,8 @@ call defx#custom#option('_', 'drives', [
         \ expand('~/workspace'),
         \ expand('~/Downloads')
         \ ])
+
+call defx#custom#option('_', {
+        \ 'split': 'floating',
+        \ 'direction': 'topleft'
+        \ })

@@ -44,7 +44,6 @@ set cursorline
 set tabstop=4
 set shiftwidth=4
 set backup
-set swapfile
 set number
 set autochdir
 set clipboard=unnamed

@@ -1,14 +1,16 @@
 nnoremap [Defx] <Nop>
 nmap <Space>e [Defx]
 
-nnoremap <silent> [Defx]e :<C-u>Defx `expand('%:p:h')`<CR>
-nnoremap <silent> [Defx]v :<C-u>Defx -resume<CR>
+nnoremap <silent> [Defx]e :<C-u>Defx `expand('%:p:h')` -split=floating -direction=topleft<CR>
+nnoremap <silent> [Defx]v :<C-u>Defx -resume -split=floating -direction=topleft<CR>
 
 autocmd FileType defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
     " Define mappings
     nnoremap <silent><buffer><expr> <CR>
-            \ defx#do_action('open')
+            \ defx#is_directory() ?
+            \ defx#do_action('open') :
+            \ defx#do_action('multi', ['drop', 'quit'])
     nnoremap <silent><buffer><expr> c
             \ defx#do_action('copy')
     nnoremap <silent><buffer><expr> m
@@ -16,7 +18,9 @@ function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> p
             \ defx#do_action('paste')
     nnoremap <silent><buffer><expr> l
-            \ defx#do_action('open')
+            \ defx#is_directory() ?
+            \ defx#do_action('open') :
+            \ defx#do_action('multi', ['drop', 'quit'])
     nnoremap <silent><buffer><expr> E
             \ defx#do_action('open', 'vsplit')
     nnoremap <silent><buffer><expr> P

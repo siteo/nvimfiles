@@ -94,5 +94,6 @@ call defx#custom#option('_', 'drives', [
 
 call defx#custom#option('_', {
         \ 'split': 'floating',
-        \ 'direction': 'topleft'
+        \ 'direction': 'topleft',
+        \ 'winrow': &lines/4
         \ })

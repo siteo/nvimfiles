@@ -28,7 +28,7 @@ endif
 
 command! DeinClean call s:dein_check_clean()
 function! s:dein_check_clean() abort
-    echo 'Clean unsed plugins...'
+    echo 'Clean unused plugins...'
     call map(dein#check_clean(), "delete(v:val, 'rf')")
     call dein#recache_runtimepath()
     echo 'Done'

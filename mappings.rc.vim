@@ -1,17 +1,13 @@
 """" Key mapping
+
+" Normal mode
 noremap <Up>    <Nop>
 noremap <Down>  <Nop>
 noremap <Left>  <Nop>
 noremap <Right> <Nop>
-inoremap <Up>    <Nop>
-inoremap <Down>  <Nop>
-inoremap <Left>  <Nop>
-inoremap <Right> <Nop>
-inoremap <silent> jj <ESC>
-inoremap <silent> j<Space> j
 noremap <S-h>   ^
-noremap <S-j>   }
-noremap <S-k>   {
+" noremap <S-j>   }
+" noremap <S-k>   {
 noremap <S-l>   $
 nnoremap s <Nop>
 " noremap j gj
@@ -38,4 +34,26 @@ nnoremap sd :<C-u>bd<CR>
 nnoremap sD :<C-u>bd!<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
+
+" Insert mode
+inoremap <Up>    <Nop>
+inoremap <Down>  <Nop>
+inoremap <Left>  <Nop>
+inoremap <Right> <Nop>
+inoremap <silent> jj <ESC>
+inoremap <silent> j<Space> j
+
+" Terminal mode
 tnoremap <C-j><C-j> <C-\><C-n>
+
+" Operator
+onoremap 8 i(
+onoremap 2 i"
+onoremap 7 i'
+onoremap @ i`
+onoremap [ i[
+onoremap { i{
+onoremap a8 a(
+onoremap a2 a(
+onoremap a7 a'
+onoremap a@ a`

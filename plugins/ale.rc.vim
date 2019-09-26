@@ -5,9 +5,15 @@ nnoremap <silent> [ALE]d :<C-u>ALEDetail<CR>
 nnoremap <silent> [ALE]n :<C-u>ALENext<CR>
 nnoremap <silent> [ALE]p :<C-u>ALEPrevious<CR>
 
+let g:ale_linter_aliases = {
+    \ 'javascriptreact': ['javascript', 'jsx'],
+    \ 'typescriptreact': ['typescript', 'tsx'],
+    \ }
+
 let g:ale_linters = {
     \ 'python': ['flake8'],
-    \ 'javascript': ['eslint'],
+    \ 'javascript': ['eslint', 'tsserver'],
+    \ 'typescript': ['eslint', 'tsserver'],
     \ 'css': ['stylelint'],
     \ 'scss': ['stylelint'],
     \ }
@@ -39,8 +45,4 @@ let g:ale_python_isort_options = '-m isort'
 let g:ale_python_black_options = '-m black'
 
 let g:ale_fix_on_save = 1
-
-augroup FiletypeGroup
-    autocmd!
-    au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
-augroup END
+let g:ale_completion_enabled = 0

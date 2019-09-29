@@ -28,10 +28,10 @@ let g:ale_fixers = {
     \ }
 
 if has('mac')
-    let g:ale_python_flake8_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
-    let g:ale_python_autopep8_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
-    let g:ale_python_isort_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
-    let g:ale_python_black_executable = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
+    let g:ale_python_flake8_executable = expand('~/.nvim/pynvim/bin/flake8')
+    let g:ale_python_autopep8_executable = expand('~/.nvim/pynvim/bin/autopep8')
+    let g:ale_python_isort_executable = expand('~/.nvim/pynvim/bin/isort')
+    let g:ale_python_black_executable = expand('~/..nvim/pynvim/bin/black')
 elseif has('win32') || has('win64')
     let g:ale_python_flake8_executable = $HOMEPATH.'\nvimenv\pynvim\Scripts\python'
     let g:ale_python_autopep8_executable = $HOMEPATH.'\nvimenv\pynvim\Scripts\python'

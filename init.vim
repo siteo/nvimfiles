@@ -19,8 +19,7 @@ source ~/nvimfiles/dein.rc.vim
 
 """" Python provider
 if has('mac')
-    let g:python_host_prog  = '/usr/local/var/pyenv/versions/py2neovim/bin/python'
-    let g:python3_host_prog = '/usr/local/var/pyenv/versions/py3neovim/bin/python'
+    let g:python3_host_prog = expand('~/.nvim/pynvim/bin/python')
 elseif has('win32') || has('win64')
     let g:python3_host_prog = $HOMEPATH.'\nvimenv\pynvim\Scripts\python'
 endif
@@ -32,7 +31,7 @@ endif
 
 """" Node.js provider
 if has('mac')
-    let g:node_host_prog = '~/.nodebrew/current/bin/neovim-node-host'
+    let g:node_host_prog = expand('~/.anyenv/envs/nodenv/versions/12.11.0/bin/neovim-node-host')
 endif
 
 

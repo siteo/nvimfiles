@@ -21,18 +21,6 @@ repo = 'Shougo/deoplete.nvim'
 hook_add = 'source ~/nvimfiles/plugins/deoplete.rc.vim'
 
 [[plugins]]
-repo = 'prabirshrestha/vim-lsp'
-depends = ['async.vim']
-hook_add = 'source ~/nvimfiles/plugins/vim-lsp.rc.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/async.vim'
-
-[[plugins]]
-repo = 'lighttiger2505/deoplete-vim-lsp'
-depends = ['deoplete.nvim', 'vim-lsp']
-
-[[plugins]]
 repo = 'tbodt/deoplete-tabnine'
 hook_post_update = '''
 if has('win32')

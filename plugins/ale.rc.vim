@@ -1,7 +1,10 @@
 nnoremap [ALE] <Nop>
 nmap <Space>a [ALE]
-nnoremap <silent> [ALE]f :<C-u>ALEFix<CR>
-nnoremap <silent> [ALE]d :<C-u>ALEDetail<CR>
+nnoremap <silent> [ALE]f :<C-u>ALEFindReferences<CR>
+nnoremap <silent> [ALE]r :<C-u>ALERename<CR>
+nnoremap <silent> [ALE]d :<C-u>ALEDefinition<CR>
+nnoremap <silent> [ALE]t :<C-u>ALETypeDefinitions<CR>
+nnoremap <silent> [ALE]h :<C-u>ALEHover<CR>
 nnoremap <silent> [ALE]n :<C-u>ALENext<CR>
 nnoremap <silent> [ALE]p :<C-u>ALEPrevious<CR>
 
@@ -46,3 +49,5 @@ let g:ale_python_black_options = '-m black'
 
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 0
+
+call deoplete#custom#source('ale','rank',100)

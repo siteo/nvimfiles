@@ -2,7 +2,7 @@ nnoremap [ALE] <Nop>
 nmap <Space>a [ALE]
 nnoremap <silent> [ALE]f :<C-u>ALEFindReferences<CR>
 nnoremap <silent> [ALE]r :<C-u>ALERename<CR>
-nnoremap <silent> [ALE]d :<C-u>ALEDefinition<CR>
+nnoremap <silent> [ALE]d :<C-u>ALEGoToDefinition<CR>
 nnoremap <silent> [ALE]t :<C-u>ALETypeDefinitions<CR>
 nnoremap <silent> [ALE]h :<C-u>ALEHover<CR>
 nnoremap <silent> [ALE]n :<C-u>ALENext<CR>

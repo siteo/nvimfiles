@@ -24,6 +24,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
     \ 'javascript': ['prettier'],
+    \ 'typescript': ['prettier'],
     \ 'json': ['prettier'],
     \ 'css': ['prettier'],
     \ 'scss': ['prettier'],

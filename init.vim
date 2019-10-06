@@ -41,7 +41,7 @@ syntax enable
 
 set cursorline
 set tabstop=4
-set shiftwidth=4
+set shiftwidth=0
 set backup
 set number
 set autochdir
@@ -76,8 +76,11 @@ endif
 hi clear CursorLine
 
 
-"""" Key mapping
+"""" Key mappings
 source ~/nvimfiles/mappings.rc.vim
+
+"""" FileType settings
+source ~/nvimfiles/filetype.rc.vim
 
 """" Define commands
 command! TagsGenerate execute 'silent !ctags -R -f .tags'

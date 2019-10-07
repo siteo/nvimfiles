@@ -63,8 +63,10 @@ repo = 'airblade/vim-gitgutter'
 hook_add = 'source ~/nvimfiles/plugins/gitgutter.rc.vim'
 
 [[plugins]]
-repo = 'nathanaelkane/vim-indent-guides'
-hook_add = 'source ~/nvimfiles/plugins/vim-indent-guides.rc.vim'
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+let g:indentLine_char_list = ['|', '¦']
+'''
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'

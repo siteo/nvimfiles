@@ -50,5 +50,3 @@ let g:ale_python_black_options = '-m black'
 
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 0
-
-call deoplete#custom#source('ale','rank',100)

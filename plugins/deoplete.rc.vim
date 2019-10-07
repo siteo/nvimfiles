@@ -26,6 +26,8 @@ call deoplete#custom#option({
             \ 'auto_preview': v:true
             \ })
 
+call deoplete#custom#source('ale','rank',600)
+
 call deoplete#custom#option('candidate_marks',
         \ ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'])
 inoremap <expr>A pumvisible() ? deoplete#insert_candidate(0) : 'A'

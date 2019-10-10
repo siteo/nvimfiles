@@ -4,7 +4,7 @@ on_cmd = 'Goyo'
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = ['javascript', 'javascript.jsx', 'html']
+on_ft = ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx', 'html']
 
 [[plugins]]
 repo = 'junegunn/gv.vim'

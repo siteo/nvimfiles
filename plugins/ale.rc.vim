@@ -7,6 +7,8 @@ nnoremap <silent> [ALE]t :<C-u>ALETypeDefinitions<CR>
 nnoremap <silent> [ALE]h :<C-u>ALEHover<CR>
 nnoremap <silent> [ALE]n :<C-u>ALENext<CR>
 nnoremap <silent> [ALE]p :<C-u>ALEPrevious<CR>
+nnoremap <silent> [ALE]l :<C-u>ALELint<CR>
+nnoremap <silent> [ALE]i :<C-u>ALEDetail<CR>
 
 let g:ale_linter_aliases = {
     \ 'javascriptreact': ['javascript', 'jsx'],

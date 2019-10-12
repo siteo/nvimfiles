@@ -29,13 +29,9 @@ call deoplete#custom#option({
 call deoplete#custom#source('ale','rank',600)
 
 call deoplete#custom#option('candidate_marks',
-        \ ['A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L'])
-inoremap <expr>A pumvisible() ? deoplete#insert_candidate(0) : 'A'
-inoremap <expr>S pumvisible() ? deoplete#insert_candidate(1) : 'S'
-inoremap <expr>D pumvisible() ? deoplete#insert_candidate(2) : 'D'
-inoremap <expr>F pumvisible() ? deoplete#insert_candidate(3) : 'F'
-inoremap <expr>G pumvisible() ? deoplete#insert_candidate(4) : 'G'
-inoremap <expr>H pumvisible() ? deoplete#insert_candidate(5) : 'H'
-inoremap <expr>J pumvisible() ? deoplete#insert_candidate(6) : 'J'
-inoremap <expr>K pumvisible() ? deoplete#insert_candidate(7) : 'K'
-inoremap <expr>L pumvisible() ? deoplete#insert_candidate(8) : 'L'
+        \ ['1', '2', '3', '4', '5'])
+inoremap <expr>1 pumvisible() ? deoplete#insert_candidate(0) : '1'
+inoremap <expr>2 pumvisible() ? deoplete#insert_candidate(1) : '2'
+inoremap <expr>3 pumvisible() ? deoplete#insert_candidate(2) : '3'
+inoremap <expr>4 pumvisible() ? deoplete#insert_candidate(3) : '4'
+inoremap <expr>5 pumvisible() ? deoplete#insert_candidate(4) : '5'

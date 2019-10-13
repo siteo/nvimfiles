@@ -1,6 +1,7 @@
 # nvimfiles
 Configuration file for Neovim.
 
+
 ## Requirements
 
 **[Common]**

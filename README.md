@@ -10,7 +10,6 @@ Configuration file for Neovim.
 **[Mac]**
 * pyenv
 * pyenv-virtualenv
-* nodebrew
 
 **[Windows]**
 

@@ -61,6 +61,7 @@ set noswapfile
 set termguicolors
 set winblend=15
 set pumblend=15
+set virtualedit+=block
 
 set tags=.tags;~
 

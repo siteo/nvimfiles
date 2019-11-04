@@ -10,11 +10,6 @@ nnoremap <silent> [ALE]p :<C-u>ALEPrevious<CR>
 nnoremap <silent> [ALE]l :<C-u>ALELint<CR>
 nnoremap <silent> [ALE]i :<C-u>ALEDetail<CR>
 
-let g:ale_linter_aliases = {
-    \ 'javascriptreact': ['javascript', 'jsx'],
-    \ 'typescriptreact': ['typescript', 'tsx'],
-    \ }
-
 let g:ale_linters = {
     \ 'python': ['flake8', 'pyls', 'mypy'],
     \ 'javascript': ['eslint', 'tsserver'],
@@ -27,6 +22,8 @@ let g:ale_fixers = {
     \ 'python': ['autopep8', 'black', 'isort'],
     \ 'javascript': ['prettier'],
     \ 'typescript': ['prettier'],
+    \ 'javascriptreact': ['prettier'],
+    \ 'typescriptreact': ['prettier'],
     \ 'json': ['prettier'],
     \ 'css': ['prettier'],
     \ 'scss': ['prettier'],

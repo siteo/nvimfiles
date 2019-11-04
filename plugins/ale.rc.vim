@@ -14,6 +14,8 @@ let g:ale_linters = {
     \ 'python': ['flake8', 'pyls', 'mypy'],
     \ 'javascript': ['eslint', 'tsserver'],
     \ 'typescript': ['eslint', 'tsserver'],
+    \ 'javascriptreact': ['eslint', 'tsserver'],
+    \ 'typescriptreact': ['eslint', 'tsserver'],
     \ 'css': ['stylelint'],
     \ 'scss': ['stylelint'],
     \ }

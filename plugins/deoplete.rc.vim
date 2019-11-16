@@ -27,11 +27,3 @@ call deoplete#custom#option({
             \ })
 
 call deoplete#custom#source('ale','rank',600)
-
-call deoplete#custom#option('candidate_marks',
-        \ ['1', '2', '3', '4', '5'])
-inoremap <expr>1 pumvisible() ? deoplete#insert_candidate(0) : '1'
-inoremap <expr>2 pumvisible() ? deoplete#insert_candidate(1) : '2'
-inoremap <expr>3 pumvisible() ? deoplete#insert_candidate(2) : '3'
-inoremap <expr>4 pumvisible() ? deoplete#insert_candidate(3) : '4'
-inoremap <expr>5 pumvisible() ? deoplete#insert_candidate(4) : '5'

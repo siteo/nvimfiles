@@ -59,6 +59,12 @@ repo = 'tpope/vim-fugitive'
 hook_add = 'source ~/nvimfiles/plugins/fugitive.rc.vim'
 
 [[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'tpope/vim-repeat'
+
+[[plugins]]
 repo = 'airblade/vim-gitgutter'
 hook_add = 'source ~/nvimfiles/plugins/gitgutter.rc.vim'
 
@@ -78,9 +84,6 @@ depends = ['vim-airline']
 hook_add = "let g:airline_theme='iceberg'"
 
 [[plugins]]
-repo = 'tpope/vim-surround'
-
-[[plugins]]
 repo = 'kshenoy/vim-signature'
 
 [[plugins]]
@@ -93,6 +96,3 @@ hook_add = 'source ~/nvimfiles/plugins/easymotion.rc.vim'
 
 [[plugins]]
 repo = 'mbbill/undotree'
-
-[[plugins]]
-repo = 'tpope/vim-repeat'

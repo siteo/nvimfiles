@@ -3,10 +3,6 @@ repo = 'junegunn/goyo.vim'
 on_cmd = 'Goyo'
 
 [[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'html']
-
-[[plugins]]
 repo = 'junegunn/gv.vim'
 on_cmd = 'GV'
 
@@ -15,13 +11,16 @@ repo = 'junegunn/limelight.vim'
 hook_add = 'source ~/nvimfiles/plugins/limelight.rc.vim'
 
 [[plugins]]
+repo = 'mattn/emmet-vim'
+on_ft = ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'html']
+
+[[plugins]]
 repo = 'Shougo/neco-vim'
 on_ft = 'vim'
 
 [[plugins]]
 repo = 'majutsushi/tagbar'
 on_cmd = 'Tagbar'
-
 
 [[plugins]]
 repo = 'previm/previm'

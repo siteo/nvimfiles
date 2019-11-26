@@ -17,52 +17,60 @@ endif
 
 call plug#begin(s:plug_repo_dir)
     Plug 'junegunn/vim-plug', {'dir': '~/.nvim/vim-plug/autoload'}
+    Plug 'Shougo/denite.nvim' | Plug 'Shougo/neomru.vim'
+    Plug 'Shougo/defx.nvim'
+    Plug 'Shougo/deoplete.nvim' | Plug 'tbodt/deoplete-tabnine'
     Plug 'cocopon/iceberg.vim', {'do': ':colorscheme iceberg'}
-    Plug 'scrooloose/nerdtree' | Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'scrooloose/nerdcommenter'
-    Plug 'neoclide/coc.nvim', {'branch':'release'}
-    Plug 'honza/vim-snippets'
-    Plug 'cohama/lexima.vim'
+    Plug 'sheerun/vim-polyglot'
+    Plug 'jiangmiao/auto-pairs'
     Plug 'kana/vim-submode'
+    Plug 'tpope/vim-commentary'
     Plug 'tpope/vim-fugitive'
-    Plug 'airblade/vim-gitgutter'
-    Plug 'nathanaelkane/vim-indent-guides'
-    Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
     Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-repeat'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'Yggdroot/indentLine'
+    Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
     Plug 'kshenoy/vim-signature'
-    Plug 'w0rp/ale'
+    Plug 'dense-analysis/ale'
     Plug 'easymotion/vim-easymotion'
-    Plug 'previm/previm'
-    Plug 'junegunn/fzf', has('win32') ? {'dir': '~/.fzf'} : {'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/fzf.vim'
     Plug 'mbbill/undotree'
-    Plug 'majutsushi/tagbar'
 
-    Plug 'mattn/emmet-vim', {'for': ['html', 'javascript']}
-    Plug 'pangloss/vim-javascript', {'for': 'javascript'}
-    Plug 'MaxMEllon/vim-jsx-pretty', {'for': 'javascript'}
-    Plug 'tpope/vim-markdown', {'for': 'markdown'}
+    Plug 'junegunn/goyo.vim'
+    Plug 'junegunn/gv.vim'
+    Plug 'junegunn/limelight.vim'
+    Plug 'mattn/emmet-vim', {'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'html']}
+    Plug 'Shougo/neco-vim'
+    Plug 'majutsushi/tagbar'
+    Plug 'previm/previm'
+    Plug 'tyru/open-browser.vim'
+    Plug 'dhruvasagar/vim-table-mode'
+    Plug 'ap/vim-css-color', {'for': ['css']}
 call plug#end()
 
+" denite
+source ~/nvimfiles/plugins/denite.rc.vim
+
+" defx
+source ~/nvimfiles/plugins/defx.rc.vim
+
+" deoplete
+source ~/nvimfiles/plugins/deoplete.rc.vim
 
 " colorscheme
 colorscheme iceberg
 
-" nerdtree / nerdtree-git-plugins
-source ~/nvimfiles/plugins/nerdtree.rc.vim
-source ~/nvimfiles/plugins/nerdtree-git-plugin.rc.vim
-
-" coc
-source ~/nvimfiles/plugins/coc.rc.vim
-
 " vim-submode
 source ~/nvimfiles/plugins/submode.rc.vim
 
-" gitplug
-source ~/nvimfiles/plugins/gitplug.rc.vim
+" vim-fugitive
+source ~/nvimfiles/plugins/fugitive.rc.vim
 
-" vim-indent-guides
-source ~/nvimfiles/plugins/vim-indent-guides.rc.vim
+" vim-gitgutter
+source ~/nvimfiles/plugins/gitgutter.rc.vim
+
+" indentLine
+let g:indentLine_char_list = ['|', '¦']
 
 " vim-airline / vim-airline-themes
 source ~/nvimfiles/plugins/vim-airline.rc.vim
@@ -74,9 +82,6 @@ source ~/nvimfiles/plugins/ale.rc.vim
 " vim-easymotion
 source ~/nvimfiles/plugins/easymotion.rc.vim
 
-" fzf.vim
-source ~/nvimfiles/plugins/fzf.rc.vim
-
 " emmet-vim
 source ~/nvimfiles/plugins/emmet.rc.vim
 
@@ -86,3 +91,5 @@ let g:previm_open_cmd = 'open -a Google\ Chrome'
 " undotree
 nnoremap <F5> :UndotreeToggle<CR>
 
+" vim-table-mode
+let g:table_mode_corner = '|'

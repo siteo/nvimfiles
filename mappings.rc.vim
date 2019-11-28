@@ -54,6 +54,6 @@ onoremap @ i`
 onoremap [ i[
 onoremap { i{
 onoremap a8 a(
-onoremap a2 a(
+onoremap a2 a"
 onoremap a7 a'
 onoremap a@ a`

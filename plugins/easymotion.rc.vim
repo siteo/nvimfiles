@@ -30,35 +30,34 @@ nmap * <Plug>(easymotion-sn)<C-r><C-w><CR>
 " w
 nmap fw <Plug>(easymotion-w)
 vmap w <Plug>(easymotion-w)
-omap w <Plug>(easymotion-w)
+omap w <Plug>(easymotion-wl)
 
 " W
 nmap fW <plug>(easymotion-W)
 vmap W <plug>(easymotion-W)
-omap W <plug>(easymotion-W)
+omap W <plug>(easymotion-Wl)
 
 " b
 nmap fb <Plug>(easymotion-b)
 vmap b <Plug>(easymotion-b)
-omap b <Plug>(easymotion-b)
+omap b <Plug>(easymotion-bl)
 
 " B
 nmap fB <Plug>(easymotion-B)
 vmap B <Plug>(easymotion-B)
-omap B <Plug>(easymotion-B)
+omap B <Plug>(easymotion-Bl)
 
 " e
 nmap fe <plug>(easymotion-e)
 vmap e <plug>(easymotion-e)
-omap e <plug>(easymotion-e)
+omap e <plug>(easymotion-el)
 
 " E
 nmap fE <plug>(easymotion-E)
 vmap E <plug>(easymotion-E)
-omap E <plug>(easymotion-E)
+omap E <plug>(easymotion-El)
 
-
-" let g:EasyMotion_do_mapping = 0
+let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_startofline = 0
 let g:EasyMotion_keys = 'ASDFGHJKL'

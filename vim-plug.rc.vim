@@ -17,6 +17,7 @@ endif
 
 call plug#begin(s:plug_repo_dir)
     Plug 'junegunn/vim-plug', {'dir': '~/.nvim/vim-plug/autoload'}
+    Plug 'junegunn/vim-easy-align'
     Plug 'Shougo/denite.nvim' | Plug 'Shougo/neomru.vim'
     Plug 'Shougo/defx.nvim'
     Plug 'Shougo/deoplete.nvim' | Plug 'tbodt/deoplete-tabnine'
@@ -34,18 +35,22 @@ call plug#begin(s:plug_repo_dir)
     Plug 'kshenoy/vim-signature'
     Plug 'dense-analysis/ale'
     Plug 'easymotion/vim-easymotion'
-    Plug 'mbbill/undotree'
+    Plug 'machakann/vim-sandwich'
 
-    Plug 'junegunn/goyo.vim'
-    Plug 'junegunn/gv.vim'
-    Plug 'junegunn/limelight.vim'
-    Plug 'mattn/emmet-vim', {'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'html']}
-    Plug 'Shougo/neco-vim'
-    Plug 'majutsushi/tagbar'
-    Plug 'previm/previm'
-    Plug 'tyru/open-browser.vim'
-    Plug 'dhruvasagar/vim-table-mode'
+    " Ondemand loading
+    Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
+    Plug 'junegunn/goyo.vim', {'on': 'Goyo'}
+    Plug 'junegunn/gv.vim', {'on': 'GV'}
+    Plug 'junegunn/limelight.vim', {'on': 'Limelight'}
+    Plug 'mattn/emmet-vim', {'for': ['javascript', 'javascriptreact', 'typescript', 'typescriptreact', 'html'] }
+    Plug 'Shougo/neco-vim', {'for': ['vim'] }
+    Plug 'majutsushi/tagbar', {'on': 'Tagbar'}
+    Plug 'previm/previm', {'on': 'PrevimOpen'} | Plug 'tyru/open-browser.vim'
+    Plug 'dhruvasagar/vim-table-mode', {'on': 'TableModeToggle'}
     Plug 'ap/vim-css-color', {'for': ['css']}
+    Plug 'AndrewRadev/linediff.vim', {'on': 'Linediff'}
+    Plug 'schickling/vim-bufonly', {'on': 'BufOnly'}
+    Plug 'kien/rainbow_parentheses.vim', {'on': 'RainbowParenthesesToggle'}
 call plug#end()
 
 " denite

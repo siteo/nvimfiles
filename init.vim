@@ -10,11 +10,11 @@ augroup END
 
 
 """" dein
-source ~/nvimfiles/dein.rc.vim
+" source ~/nvimfiles/dein.rc.vim
 
 
 """" vim-plug
-" source ~/nvimfiles/vim-plug.rc.vim
+source ~/nvimfiles/vim-plug.rc.vim
 
 
 """" Python provider

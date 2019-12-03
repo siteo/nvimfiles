@@ -35,6 +35,7 @@ call plug#begin(s:plug_repo_dir)
     Plug 'kshenoy/vim-signature'
     Plug 'dense-analysis/ale'
     Plug 'easymotion/vim-easymotion'
+    Plug 'lambdalisue/gina.vim'
 
     " Ondemand loading
     Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}

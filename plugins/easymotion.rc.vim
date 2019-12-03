@@ -4,12 +4,12 @@ vmap s <Plug>(easymotion-s2)
 omap s <Plug>(easymotion-s2)
 
 " f
-nmap ff <Plug>(easymotion-fl)
+nmap ff <Plug>(easymotion-f)
 vmap f <Plug>(easymotion-fl)
 omap f <Plug>(easymotion-fl)
 
 " t
-nmap ft <Plug>(easymotion-tl)
+nmap ft <Plug>(easymotion-t)
 vmap t <Plug>(easymotion-tl)
 vmap t <Plug>(easymotion-tl)
 
@@ -22,7 +22,7 @@ nmap fk <Plug>(easymotion-k)
 vmap fk <Plug>(easymotion-k)
 
 " /
-nmap f/ <Plug>(easymotion-sn)
+nmap / <Plug>(easymotion-sn)
 nmap n <Plug>(easymotion-next)
 nmap N <Plug>(easymotion-prev)
 nmap * <Plug>(easymotion-sn)<C-r><C-w><CR>

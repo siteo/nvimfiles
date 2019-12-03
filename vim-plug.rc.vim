@@ -35,7 +35,6 @@ call plug#begin(s:plug_repo_dir)
     Plug 'kshenoy/vim-signature'
     Plug 'dense-analysis/ale'
     Plug 'easymotion/vim-easymotion'
-    Plug 'machakann/vim-sandwich'
 
     " Ondemand loading
     Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}
@@ -98,3 +97,6 @@ nnoremap <F5> :UndotreeToggle<CR>
 
 " vim-table-mode
 let g:table_mode_corner = '|'
+
+" easyalign
+source ~/nvimfiles/plugins/easyalign.rc.vim

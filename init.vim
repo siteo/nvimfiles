@@ -62,6 +62,9 @@ set termguicolors
 set winblend=15
 set pumblend=15
 set virtualedit+=block
+set nohlsearch
+set updatetime=100
+
 
 set tags=.tags;~
 

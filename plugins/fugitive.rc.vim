@@ -8,3 +8,4 @@ nnoremap <silent> [GitPlug]r :<C-u>Gread<CR>
 nnoremap <silent> [GitPlug]d :<C-u>Gdiff<CR>
 nnoremap <silent> [GitPlug]b :<C-u>Gblame<CR>
 nnoremap <silent> [GitPlug]i :<C-u>Git init<CR>
+nnoremap <silent> [GitPlug]m :<C-u>Gmerge

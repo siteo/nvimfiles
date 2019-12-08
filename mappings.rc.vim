@@ -44,7 +44,7 @@ inoremap <silent> jj <ESC>
 inoremap <silent> j<Space> j
 
 " Terminal mode
-tnoremap <C-j><C-j> <C-\><C-n>
+tnoremap <C-n><C-n> <C-\><C-n>
 
 " Operator
 onoremap 8 i(

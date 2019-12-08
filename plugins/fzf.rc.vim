@@ -1,17 +1,16 @@
-let g:fzf_command_prefix = 'Fzf'
-
 nnoremap [Fzf] <Nop>
 nmap <Space>f [Fzf]
 
-nnoremap <silent> [Fzf]f :<C-u>FzfFiles<CR>
-nnoremap <silent> [Fzf]g :<C-u>FzfGFiles<CR>
-nnoremap <silent> [Fzf]s :<C-u>FzfGFiles?<CR>
-nnoremap <silent> [Fzf]b :<C-u>FzfBuffers<CR>
-nnoremap <silent> [Fzf]c :<C-u>FzfCommits<CR>
-nnoremap <silent> [Fzf]l :<C-u>FzfLines<CR>
-nnoremap <silent> [Fzf]h :<C-u>FzfHistory<CR>
-nnoremap <silent> [Fzf]a :<C-u>FzfAg<CR>
-nnoremap <silent> [Fzf]t :call fzf#vim#tags("'" . expand('<cword>'))<CR>
+nnoremap <silent> [Fzf]f :<C-u>Files<CR>
+nnoremap <silent> [Fzf]g :<C-u>GFiles<CR>
+nnoremap <silent> [Fzf]s :<C-u>GFiles?<CR>
+nnoremap <silent> [Fzf]b :<C-u>Buffers<CR>
+nnoremap <silent> [Fzf]c :<C-u>Commits<CR>
+nnoremap <silent> [Fzf]l :<C-u>Lines<CR>
+nnoremap <silent> [Fzf]m :<C-u>History<CR>
+nnoremap <silent> [Fzf]a :<C-u>Ag<CR>
+nnoremap <silent> [Fzf]t :call #vim#tags("'" . expand('<cword>'))<CR>
+nnoremap <silent> [Fzf]h :<C-u>Helptags<CR>
 
 " Mapping selecting mappings
 nmap <leader><tab> <plug>(fzf-maps-n)

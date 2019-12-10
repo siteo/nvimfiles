@@ -44,6 +44,7 @@ set tabstop=4
 set shiftwidth=0
 set backup
 set number
+set relativenumber
 set autochdir
 set clipboard=unnamed
 set encoding=utf-8

@@ -34,6 +34,7 @@ nnoremap sd :<C-u>bd<CR>
 nnoremap sD :<C-u>bd!<CR>
 nnoremap [q :cprevious<CR>
 nnoremap ]q :cnext<CR>
+nnoremap x "_x
 
 " Insert mode
 inoremap <Up>    <Nop>
@@ -45,6 +46,9 @@ inoremap <silent> j<Space> j
 
 " Terminal mode
 tnoremap <C-n><C-n> <C-\><C-n>
+
+" Visual mode
+vnoremap x "_x
 
 " Operator
 onoremap 8 i(

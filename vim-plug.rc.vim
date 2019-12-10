@@ -18,11 +18,11 @@ endif
 call plug#begin(s:plug_repo_dir)
   Plug 'junegunn/vim-plug', {'dir': '~/.nvim/vim-plug/autoload'}
   Plug 'junegunn/vim-easy-align'
-  if has('mac')
+  if has('win32')
+    Plug 'Shougo/denite.nvim' | Plug 'Shougo/neomru.vim'
+  else
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
-  elseif has('win32')
-    Plug 'Shougo/denite.nvim' | Plug 'Shougo/neomru.vim'
   endif
   Plug 'Shougo/defx.nvim'
   " Plug 'Shougo/deoplete.nvim' | Plug 'tbodt/deoplete-tabnine'
@@ -48,6 +48,7 @@ call plug#begin(s:plug_repo_dir)
   Plug 'dense-analysis/ale'
   Plug 'easymotion/vim-easymotion'
   Plug 'lambdalisue/gina.vim'
+  Plug 'andymass/vim-matchup'
 
   " Ondemand loading
   Plug 'mbbill/undotree', {'on': 'UndotreeToggle'}

@@ -66,7 +66,11 @@ set virtualedit+=block
 set nohlsearch
 set updatetime=300
 set signcolumn=yes
-
+set cmdheight=2
+set shortmess+=c
+set t_Co=256
+set laststatus=2
+set showtabline=2
 
 set tags=.tags;~
 

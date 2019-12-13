@@ -18,7 +18,7 @@ Configuration file for Neovim.
 ## Installation
 
 **[Mac]**
-Execute scripts/nvimrc.sh
+Execute scripts/install.sh
 
 **[Windows]**
-Execute scripts/nvimrc.bat
+Execute scripts/install.bat

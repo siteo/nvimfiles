@@ -60,8 +60,6 @@ set fileencodings=utf-8,sjis
 set nofoldenable
 set noswapfile
 set termguicolors
-set winblend=15
-set pumblend=15
 set virtualedit+=block
 set nohlsearch
 set updatetime=300
@@ -71,6 +69,11 @@ set shortmess+=c
 set t_Co=256
 set laststatus=2
 set showtabline=2
+
+if has('nvim')
+  set winblend=15
+  set pumblend=15
+endif
 
 set tags=.tags;~
 

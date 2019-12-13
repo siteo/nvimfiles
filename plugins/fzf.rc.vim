@@ -47,11 +47,7 @@ let g:fzf_history_dir = '~/.nvim/fzf-history'
 let g:fzf_buffers_jump = 1
 
 if has('nvim')
-  set winblend=15
-
-  if stridx($FZF_DEFAULT_OPTS, '--border') == -1
-    let $FZF_DEFAULT_OPTS .= ' --border --margin=0,2'
-  endif
+  let $FZF_DEFAULT_OPTS .= ' --border --margin=0,2'
 
   function! FloatingFZF()
     let width = float2nr(&columns * 0.8)

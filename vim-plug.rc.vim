@@ -94,9 +94,13 @@ if has_key(g:plugs, 'coc.nvim')
 endif
 
 " onedark
-if has_key(g:plugs, 'onedark.vim')
-  colorscheme onedark
+" if has_key(g:plugs, 'onedark.vim')
+"   colorscheme onedark
+" endif
+if has_key(g:plug, 'iceberg.vim')
+  colorscheme iceberg
 endif
+
 
 " vim-submode
 if has_key(g:plugs, 'vim-submode')
@@ -123,7 +127,7 @@ if has_key(g:plugs, 'vim-airline')
   source ~/nvimfiles/plugins/vim-airline.rc.vim
 endif
 if has_key(g:plugs, 'vim-airline-themes')
-  let g:airline_theme='onedark'
+  let g:airline_theme='jellybeans'
 endif
 
 " ale

@@ -97,7 +97,7 @@ endif
 " if has_key(g:plugs, 'onedark.vim')
 "   colorscheme onedark
 " endif
-if has_key(g:plug, 'iceberg.vim')
+if has_key(g:plugs, 'iceberg.vim')
   colorscheme iceberg
 endif
 

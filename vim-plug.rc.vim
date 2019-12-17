@@ -36,6 +36,13 @@ if has('win32')
   endif
   Plug 'Shougo/neomru.vim'
 else
+  if has('nvim')
+    Plug 'Shougo/defx.nvim', {'do': ':UpdateRemotePlugins'}
+  else
+    Plug 'Shougo/defx.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+  endif
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
 endif

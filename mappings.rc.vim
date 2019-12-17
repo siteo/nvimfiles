@@ -43,6 +43,11 @@ inoremap <Left>  <Nop>
 inoremap <Right> <Nop>
 inoremap <silent> jj <ESC>
 inoremap <silent> j<Space> j
+inoremap <C-h> <C-o>h
+inoremap <C-l> <C-o>a
+inoremap <C-j> <C-o>j
+inoremap <C-k> <C-o>k
+inoremap <C-^> <C-o><C-^>
 
 " Terminal mode
 tnoremap <C-n><C-n> <C-\><C-n>

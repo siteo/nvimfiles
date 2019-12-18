@@ -57,7 +57,7 @@ set smartcase
 set conceallevel=0
 set fileformats=unix,dos,mac
 set fileencodings=utf-8,sjis
-set nofoldenable
+set foldenable
 set noswapfile
 set termguicolors
 set virtualedit+=block

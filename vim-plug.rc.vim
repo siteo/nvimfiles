@@ -1,9 +1,9 @@
 " ================================================
-" .vimrc {
+" .vimrc {{{
 " ================================================
 
 " ========================
-" vim-plug {
+" vim-plug {{{
 " ========================
 let s:plug_dir = expand('~/.nvim/vim-plug')
 let s:plug_autoload_dir = s:plug_dir . '/autoload'
@@ -84,11 +84,11 @@ Plug 'kien/rainbow_parentheses.vim', {'on': 'RainbowParenthesesToggle'}
 
 call plug#end()
 " ========================
-" }
+" }}}
 " ========================
 
 " ========================
-" Plugins setting {
+" Plugins setting {{{
 " ========================
 " denite
 if has_key(g:plugs, 'denite.nvim')
@@ -197,9 +197,9 @@ if has_key(g:plugs, 'asyncomplete.vim')
   inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 endif
 " ========================
-" }
+" }}}
 " ========================
 
 " ================================================
-" }
+" }}}
 " ================================================

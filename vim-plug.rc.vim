@@ -1,10 +1,11 @@
-" ================================================
-" .vimrc {{{
-" ================================================
+" ========================================================================
+" VIM-PLUG
+" ========================================================================
 
-" ========================
-" vim-plug {{{
-" ========================
+" ========================================================================
+" INSTALL VIM-PLUG {{{
+" ========================================================================
+
 let s:plug_dir = expand('~/.nvim/vim-plug')
 let s:plug_autoload_dir = s:plug_dir . '/autoload'
 let s:plug_repo_dir = expand('~/.nvim/plugins')
@@ -21,8 +22,14 @@ if has('vim_starting')
   endif
 endif
 
+" }}}
+" ========================================================================
+" LIST OF PLUGINS {{{
+" ========================================================================
 
 call plug#begin(s:plug_repo_dir)
+
+Plug 'vim-jp/vimdoc-ja'
 
 if has('win32')
   if has('nvim')
@@ -83,13 +90,12 @@ Plug 'schickling/vim-bufonly', {'on': 'BufOnly'}
 Plug 'kien/rainbow_parentheses.vim', {'on': 'RainbowParenthesesToggle'}
 
 call plug#end()
-" ========================
-" }}}
-" ========================
 
-" ========================
-" Plugins setting {{{
-" ========================
+" }}}
+" ========================================================================
+" PLUGINS SETTING {{{
+" ========================================================================
+
 " denite
 if has_key(g:plugs, 'denite.nvim')
   source ~/nvimfiles/plugins/denite.rc.vim
@@ -122,7 +128,6 @@ endif
 if has_key(g:plugs, 'iceberg.vim')
   colorscheme iceberg
 endif
-
 
 " vim-submode
 if has_key(g:plugs, 'vim-submode')
@@ -196,10 +201,6 @@ if has_key(g:plugs, 'asyncomplete.vim')
   inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
   inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 endif
-" ========================
-" }}}
-" ========================
 
-" ================================================
 " }}}
-" ================================================
+" ========================================================================

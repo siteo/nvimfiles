@@ -58,7 +58,7 @@ Plug 'tpope/vim-repeat'
 " ------------------------------------------------------------------------
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'Shougo/deoplete.nvim'
-"Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/async.vim'
 " Plug 'prabirshrestha/vim-lsp'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
@@ -69,6 +69,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " ------------------------------------------------------------------------
 if has('win32')
   Plug 'Shougo/denite.nvim'
+  Plug 'Shougo/neomru.vim'
 else
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/fzf.vim'
@@ -176,9 +177,7 @@ endif
 
 " asyncomplete
 if has_key(g:plugs, 'asyncomplete.vim')
-  inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
-  inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-  inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
+  source ~/nvimfiles/plugins/asyncomplete.rc.vim
 endif
 
 " vim-lsp

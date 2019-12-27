@@ -39,6 +39,7 @@ Plug 'junegunn/vim-plug', {'dir': '~/.nvim/vim-plug/autoload'}
 " Filer {{{
 " ------------------------------------------------------------------------
 Plug 'Shougo/defx.nvim'
+Plug 'cocopon/vaffle.vim'
 
 " }}}
 " ------------------------------------------------------------------------
@@ -61,6 +62,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'prabirshrestha/asyncomplete.vim'
 " Plug 'prabirshrestha/async.vim'
 " Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
 " Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " }}}

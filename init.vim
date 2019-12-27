@@ -82,6 +82,7 @@ set conceallevel=0
 set fileformats=unix,dos,mac
 set fileencodings=utf-8,sjis
 set foldenable
+set foldlevelstart=99
 set noswapfile
 set termguicolors
 set virtualedit+=block
@@ -92,7 +93,7 @@ set cmdheight=2
 set shortmess+=c
 set showtabline=2
 
-if has('nvim')
+if has('nvim') && ( has('mac') || has('win32') )
   set winblend=15
   set pumblend=15
 endif
